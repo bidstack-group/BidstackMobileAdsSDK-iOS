@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = '5.0'
   
                                  
-  spec.source       = { :git => "https://github.com/bidstack-group/BidstackAdaptersiOS/tree/main/BidstackMobileAdsSDK/v#{spec.version}/" }
+  spec.source       = { :git => "https://github.com/bidstack-group/BidstackMobileAdsSDK-iOS.git", :tag="v#{spec.version}" }
 
   spec.vendored_frameworks  = "BidstackMobileAdsSDK.xcframework", "Frameworks/*.xcframework"
  	
