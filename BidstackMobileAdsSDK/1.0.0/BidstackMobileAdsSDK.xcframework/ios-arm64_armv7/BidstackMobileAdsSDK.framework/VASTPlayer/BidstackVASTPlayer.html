@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bidstack Ad Player</title>
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            background: black;
+        }
+        #ad-container {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            }
+        
+        .icon-close {
+            color: #b8b8b8;
+            user-select: none;
+            fill: currentColor;
+            height: 42px;
+            width: 42px;
+            background: url("images/icon_close.svg") no-repeat;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+
+    <script src="scripts/vast-player.min.js"></script>
+</head>
+<body>
+<div id="ad-container"></div>
+<div class="icon-close"></div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
