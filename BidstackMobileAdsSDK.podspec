@@ -15,10 +15,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "Alexey Volkov" => "aleksejs.volkovs@bidstack.com" }
   spec.platform     = :ios, "10.0"
   spec.swift_version = '5.0'
-  
-                                 
+                                   
   spec.source       = { :git => "https://github.com/bidstack-group/BidstackMobileAdsSDK-iOS.git", :tag => "v#{spec.version}" }
-
-  spec.vendored_frameworks  = "BidstackMobileAdsSDK.xcframework", "Frameworks/*.xcframework"
  	
 end
