@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "BidstackMobileAdsSDK — Bidstack ads player."
 
   spec.description  = <<-DESC
-			  Bidstack ads player.
+			  Bidstack VAST player. Mode details soon.
 		      DESC
 
   spec.homepage     = "https://bidstack.com"
@@ -17,5 +17,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = '5.0'
                                    
   spec.source       = { :git => "https://github.com/bidstack-group/BidstackMobileAdsSDK-iOS.git", :tag => "v#{spec.version}" }
+  
+  spec.vendored_frameworks = "BidstackMobileAdsSDK.xcframework"
  	
 end
