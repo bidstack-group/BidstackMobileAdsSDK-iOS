@@ -18,25 +18,37 @@
             }
         
         .icon-close {
-            color: #b8b8b8;
-            user-select: none;
-            fill: currentColor;
-            height: 42px;
-            width: 42px;
-            background: url("images/icon_close.svg") no-repeat;
-            position: absolute;
+           
+			position: absolute;
+            width: 25px;
+            height: 25px;
             top: 20px;
             left: 20px;
-            cursor: pointer;
+            padding: 0px;
             display: none;
         }
+        
+        .icon-close-line {
+            
+            stroke: #FFF;
+            stroke-width: 7%;
+            stroke-linecap: round;
+            fill: none;
+        }
+        
     </style>
 
     <script src="scripts/vast-player.min.js"></script>
 </head>
 <body>
 <div id="ad-container"></div>
-<div class="icon-close"></div>
+<div class="icon-close">
+    <svg style="width: 100%; height: 100%">
+        <circle r="50%" cx="50%" cy="50%" style="fill:#0003"></circle>
+        <line class="icon-close-line" x1="32%" y1="32%" x2="68%" y2="68%"></line>
+        <line class="icon-close-line" x1="32%" y1="68%" x2="68%" y2="32%"></line>
+    </svg>
+</div>
 
 <script src="scripts/main.js"></script>
 </body>
