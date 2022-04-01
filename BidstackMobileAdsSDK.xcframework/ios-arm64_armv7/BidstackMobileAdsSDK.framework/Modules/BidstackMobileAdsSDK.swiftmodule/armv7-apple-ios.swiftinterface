@@ -12,9 +12,6 @@ import UIKit
 import WebKit
 import _Concurrency
 @_inheritsConvenienceInitializers @objc public class BidstackMobileAds : ObjectiveC.NSObject {
-  public class var SDKVersion: Swift.String {
-    get
-  }
   @objc override dynamic public init()
   @objc deinit
 }
@@ -87,24 +84,60 @@ extension UIKit.UIDevice {
     get
   }
 }
-@objc(BidstackAdPlayerDelegate) public protocol BidstackVASTPlayerDelegate {
-  @objc func adDidLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  @objc func adDidOpen(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  @objc func adDidClose(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  @objc func adDidShowSucceed(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  @objc func adDidClick(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, clickUrl: Swift.String)
-  @objc func adDidReward(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  @objc func adDidFailToLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
-  @objc func adDidFailToShow(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
+@objc(BidstackAdapterDelegate) public protocol BidstackAdapterDelegate {
+  @objc func adDidLoad(_ unitId: Swift.String?)
+  @objc func adDidOpen(_ unitId: Swift.String?)
+  @objc func adDidClose(_ unitId: Swift.String?)
+  @objc func adDidShowSucceed(_ unitId: Swift.String?)
+  @objc func adDidClick(_ unitId: Swift.String?, clickUrl: Swift.String)
+  @objc func adDidReward(_ unitId: Swift.String?)
+  @objc func adDidFailToLoad(_ unitId: Swift.String?, error: Swift.String)
+  @objc func adDidFailToShow(_ unitId: Swift.String?, error: Swift.String)
+}
+@_inheritsConvenienceInitializers @objc(BidstackAdapterInterface) public class BidstackAdapterInterface : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func initialize(apiKey key: Swift.String, completionBlock: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
+  @objc public func networkVersion() -> Swift.String
+  @objc public func createAdapterInstance() -> BidstackMobileAdsSDK.BidstackAdapterAdInstance
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(BidstackAdapterAdInstance) public class BidstackAdapterAdInstance : ObjectiveC.NSObject {
+  @objc public var adapterDelegate: BidstackMobileAdsSDK.BidstackAdapterDelegate?
+  @objc deinit
+}
+extension BidstackMobileAdsSDK.BidstackAdapterAdInstance {
+  @objc dynamic public func loadAd(apiKey: Swift.String, adUnitId: Swift.String, isRewardedVideo: Swift.Bool)
+  @objc dynamic public func showAd(fromViewController viewController: UIKit.UIViewController)
+  @objc dynamic public func isAdAvailable() -> Swift.Bool
+}
+extension BidstackMobileAdsSDK.BidstackAdapterAdInstance : BidstackMobileAdsSDK.BidstackVASTPlayerDelegate {
+  public func adDidLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  public func adDidOpen(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  public func adDidClose(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  public func adDidShowSucceed(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  public func adDidClick(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, clickUrl: Swift.String)
+  public func adDidReward(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  public func adDidFailToLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
+  public func adDidFailToShow(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
+}
+public protocol BidstackVASTPlayerDelegate : AnyObject {
+  func adDidLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  func adDidOpen(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  func adDidClose(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  func adDidShowSucceed(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  func adDidClick(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, clickUrl: Swift.String)
+  func adDidReward(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  func adDidFailToLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
+  func adDidFailToShow(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class BidstackVASTPlayer : UIKit.UIViewController, WebKit.WKNavigationDelegate, UIKit.UIScrollViewDelegate {
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: BidstackMobileAdsSDK.BidstackVASTPlayerDelegate?
+  @_Concurrency.MainActor(unsafe) weak public var delegate: BidstackMobileAdsSDK.BidstackVASTPlayerDelegate?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
-  @objc @_Concurrency.MainActor(unsafe) public func set(vastUrl url: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public func loadPlayer(forRewardedVideo isRewardedVideo: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public func presentFrom(_ viewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) public func set(vastUrl url: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func loadPlayer(forRewardedVideo isRewardedVideo: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func presentFrom(_ viewController: UIKit.UIViewController)
   @objc deinit
 }
 extension BidstackMobileAdsSDK.BidstackVASTPlayer : WebKit.WKScriptMessageHandler {

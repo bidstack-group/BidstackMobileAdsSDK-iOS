@@ -226,6 +226,46 @@ SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackAPI")
 - (void)adRequestUsingApiKey:(NSString * _Nonnull)apiKey adUnitId:(NSString * _Nonnull)adUnitId completionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))completionHandler;
 @end
 
+@protocol BidstackAdapterDelegate;
+
+SWIFT_CLASS_NAMED("BidstackAdapterAdInstance")
+@interface BidstackAdapterAdInstance : NSObject
+@property (nonatomic, strong) id <BidstackAdapterDelegate> _Nullable adapterDelegate;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIViewController;
+
+@interface BidstackAdapterAdInstance (SWIFT_EXTENSION(BidstackMobileAdsSDK))
+- (void)loadAdWithApiKey:(NSString * _Nonnull)apiKey adUnitId:(NSString * _Nonnull)adUnitId isRewardedVideo:(BOOL)isRewardedVideo;
+- (void)showAdFromViewController:(UIViewController * _Nonnull)viewController;
+- (BOOL)isAdAvailable SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
+SWIFT_PROTOCOL_NAMED("BidstackAdapterDelegate")
+@protocol BidstackAdapterDelegate
+- (void)adDidLoad:(NSString * _Nullable)unitId;
+- (void)adDidOpen:(NSString * _Nullable)unitId;
+- (void)adDidClose:(NSString * _Nullable)unitId;
+- (void)adDidShowSucceed:(NSString * _Nullable)unitId;
+- (void)adDidClick:(NSString * _Nullable)unitId clickUrl:(NSString * _Nonnull)clickUrl;
+- (void)adDidReward:(NSString * _Nullable)unitId;
+- (void)adDidFailToLoad:(NSString * _Nullable)unitId error:(NSString * _Nonnull)error;
+- (void)adDidFailToShow:(NSString * _Nullable)unitId error:(NSString * _Nonnull)error;
+@end
+
+
+SWIFT_CLASS_NAMED("BidstackAdapterInterface")
+@interface BidstackAdapterInterface : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)initializeWithApiKey:(NSString * _Nonnull)key completionBlock:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionBlock;
+- (NSString * _Nonnull)networkVersion SWIFT_WARN_UNUSED_RESULT;
+- (BidstackAdapterAdInstance * _Nonnull)createAdapterInstance SWIFT_WARN_UNUSED_RESULT;
+@end
+
 enum logLevel : NSInteger;
 
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackLog")
@@ -252,21 +292,16 @@ SWIFT_CLASS("_TtC20BidstackMobileAdsSDK17BidstackMobileAds")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@protocol BidstackAdPlayerDelegate;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK18BidstackVASTPlayer")
 @interface BidstackVASTPlayer : UIViewController <UIScrollViewDelegate, WKNavigationDelegate>
-@property (nonatomic, weak) id <BidstackAdPlayerDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLayoutSubviews;
-- (void)setWithVastUrl:(NSString * _Nonnull)url;
-- (void)loadPlayerForRewardedVideo:(BOOL)isRewardedVideo;
-- (void)presentFrom:(UIViewController * _Nonnull)viewController;
 @end
 
 @class WKWebView;
@@ -282,19 +317,6 @@ SWIFT_CLASS("_TtC20BidstackMobileAdsSDK18BidstackVASTPlayer")
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 - (UIView * _Nullable)viewForZoomingInScrollView:(UIScrollView * _Nonnull)scrollView SWIFT_WARN_UNUSED_RESULT;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
-@end
-
-
-SWIFT_PROTOCOL_NAMED("BidstackVASTPlayerDelegate")
-@protocol BidstackAdPlayerDelegate
-- (void)adDidLoad:(BidstackVASTPlayer * _Nonnull)player;
-- (void)adDidOpen:(BidstackVASTPlayer * _Nonnull)player;
-- (void)adDidClose:(BidstackVASTPlayer * _Nonnull)player;
-- (void)adDidShowSucceed:(BidstackVASTPlayer * _Nonnull)player;
-- (void)adDidClick:(BidstackVASTPlayer * _Nonnull)player clickUrl:(NSString * _Nonnull)clickUrl;
-- (void)adDidReward:(BidstackVASTPlayer * _Nonnull)player;
-- (void)adDidFailToLoad:(BidstackVASTPlayer * _Nonnull)player error:(NSString * _Nonnull)error;
-- (void)adDidFailToShow:(BidstackVASTPlayer * _Nonnull)player error:(NSString * _Nonnull)error;
 @end
 
 
@@ -531,6 +553,46 @@ SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackAPI")
 - (void)adRequestUsingApiKey:(NSString * _Nonnull)apiKey adUnitId:(NSString * _Nonnull)adUnitId completionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))completionHandler;
 @end
 
+@protocol BidstackAdapterDelegate;
+
+SWIFT_CLASS_NAMED("BidstackAdapterAdInstance")
+@interface BidstackAdapterAdInstance : NSObject
+@property (nonatomic, strong) id <BidstackAdapterDelegate> _Nullable adapterDelegate;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIViewController;
+
+@interface BidstackAdapterAdInstance (SWIFT_EXTENSION(BidstackMobileAdsSDK))
+- (void)loadAdWithApiKey:(NSString * _Nonnull)apiKey adUnitId:(NSString * _Nonnull)adUnitId isRewardedVideo:(BOOL)isRewardedVideo;
+- (void)showAdFromViewController:(UIViewController * _Nonnull)viewController;
+- (BOOL)isAdAvailable SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
+SWIFT_PROTOCOL_NAMED("BidstackAdapterDelegate")
+@protocol BidstackAdapterDelegate
+- (void)adDidLoad:(NSString * _Nullable)unitId;
+- (void)adDidOpen:(NSString * _Nullable)unitId;
+- (void)adDidClose:(NSString * _Nullable)unitId;
+- (void)adDidShowSucceed:(NSString * _Nullable)unitId;
+- (void)adDidClick:(NSString * _Nullable)unitId clickUrl:(NSString * _Nonnull)clickUrl;
+- (void)adDidReward:(NSString * _Nullable)unitId;
+- (void)adDidFailToLoad:(NSString * _Nullable)unitId error:(NSString * _Nonnull)error;
+- (void)adDidFailToShow:(NSString * _Nullable)unitId error:(NSString * _Nonnull)error;
+@end
+
+
+SWIFT_CLASS_NAMED("BidstackAdapterInterface")
+@interface BidstackAdapterInterface : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)initializeWithApiKey:(NSString * _Nonnull)key completionBlock:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionBlock;
+- (NSString * _Nonnull)networkVersion SWIFT_WARN_UNUSED_RESULT;
+- (BidstackAdapterAdInstance * _Nonnull)createAdapterInstance SWIFT_WARN_UNUSED_RESULT;
+@end
+
 enum logLevel : NSInteger;
 
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackLog")
@@ -557,21 +619,16 @@ SWIFT_CLASS("_TtC20BidstackMobileAdsSDK17BidstackMobileAds")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@protocol BidstackAdPlayerDelegate;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK18BidstackVASTPlayer")
 @interface BidstackVASTPlayer : UIViewController <UIScrollViewDelegate, WKNavigationDelegate>
-@property (nonatomic, weak) id <BidstackAdPlayerDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLayoutSubviews;
-- (void)setWithVastUrl:(NSString * _Nonnull)url;
-- (void)loadPlayerForRewardedVideo:(BOOL)isRewardedVideo;
-- (void)presentFrom:(UIViewController * _Nonnull)viewController;
 @end
 
 @class WKWebView;
@@ -587,19 +644,6 @@ SWIFT_CLASS("_TtC20BidstackMobileAdsSDK18BidstackVASTPlayer")
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 - (UIView * _Nullable)viewForZoomingInScrollView:(UIScrollView * _Nonnull)scrollView SWIFT_WARN_UNUSED_RESULT;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
-@end
-
-
-SWIFT_PROTOCOL_NAMED("BidstackVASTPlayerDelegate")
-@protocol BidstackAdPlayerDelegate
-- (void)adDidLoad:(BidstackVASTPlayer * _Nonnull)player;
-- (void)adDidOpen:(BidstackVASTPlayer * _Nonnull)player;
-- (void)adDidClose:(BidstackVASTPlayer * _Nonnull)player;
-- (void)adDidShowSucceed:(BidstackVASTPlayer * _Nonnull)player;
-- (void)adDidClick:(BidstackVASTPlayer * _Nonnull)player clickUrl:(NSString * _Nonnull)clickUrl;
-- (void)adDidReward:(BidstackVASTPlayer * _Nonnull)player;
-- (void)adDidFailToLoad:(BidstackVASTPlayer * _Nonnull)player error:(NSString * _Nonnull)error;
-- (void)adDidFailToShow:(BidstackVASTPlayer * _Nonnull)player error:(NSString * _Nonnull)error;
 @end
 
 
