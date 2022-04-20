@@ -17,7 +17,7 @@ import _Concurrency
 }
 @_inheritsConvenienceInitializers @objc public class BidstackAPI : ObjectiveC.NSObject {
   @objc override dynamic public init()
-  @objc public func authorizeUsing(apiKey: Swift.String, completionHandler: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
+  @objc public func authorizeUsing(apiKey: Swift.String, adapterName: Swift.String, completionHandler: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
   @objc public func adRequestUsing(apiKey: Swift.String, adUnitId: Swift.String, completionHandler: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
   @objc deinit
 }
@@ -96,6 +96,7 @@ extension UIKit.UIDevice {
 }
 @_inheritsConvenienceInitializers @objc(BidstackAdapterInterface) public class BidstackAdapterInterface : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  @objc public func initialize(apiKey key: Swift.String, adapterName: Swift.String, completionBlock: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
   @objc public func initialize(apiKey key: Swift.String, completionBlock: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
   @objc public func networkVersion() -> Swift.String
   @objc public func createAdapterInstance() -> BidstackMobileAdsSDK.BidstackAdapterAdInstance

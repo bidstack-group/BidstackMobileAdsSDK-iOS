@@ -222,7 +222,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackAPI")
 @interface BidstackAPI : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)authorizeUsingApiKey:(NSString * _Nonnull)apiKey completionHandler:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionHandler;
+- (void)authorizeUsingApiKey:(NSString * _Nonnull)apiKey adapterName:(NSString * _Nonnull)adapterName completionHandler:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionHandler;
 - (void)adRequestUsingApiKey:(NSString * _Nonnull)apiKey adUnitId:(NSString * _Nonnull)adUnitId completionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))completionHandler;
 @end
 
@@ -261,6 +261,7 @@ SWIFT_PROTOCOL_NAMED("BidstackAdapterDelegate")
 SWIFT_CLASS_NAMED("BidstackAdapterInterface")
 @interface BidstackAdapterInterface : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)initializeWithApiKey:(NSString * _Nonnull)key adapterName:(NSString * _Nonnull)adapterName completionBlock:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionBlock;
 - (void)initializeWithApiKey:(NSString * _Nonnull)key completionBlock:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionBlock;
 - (NSString * _Nonnull)networkVersion SWIFT_WARN_UNUSED_RESULT;
 - (BidstackAdapterAdInstance * _Nonnull)createAdapterInstance SWIFT_WARN_UNUSED_RESULT;
@@ -549,7 +550,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackAPI")
 @interface BidstackAPI : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)authorizeUsingApiKey:(NSString * _Nonnull)apiKey completionHandler:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionHandler;
+- (void)authorizeUsingApiKey:(NSString * _Nonnull)apiKey adapterName:(NSString * _Nonnull)adapterName completionHandler:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionHandler;
 - (void)adRequestUsingApiKey:(NSString * _Nonnull)apiKey adUnitId:(NSString * _Nonnull)adUnitId completionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))completionHandler;
 @end
 
@@ -588,6 +589,7 @@ SWIFT_PROTOCOL_NAMED("BidstackAdapterDelegate")
 SWIFT_CLASS_NAMED("BidstackAdapterInterface")
 @interface BidstackAdapterInterface : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)initializeWithApiKey:(NSString * _Nonnull)key adapterName:(NSString * _Nonnull)adapterName completionBlock:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionBlock;
 - (void)initializeWithApiKey:(NSString * _Nonnull)key completionBlock:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionBlock;
 - (NSString * _Nonnull)networkVersion SWIFT_WARN_UNUSED_RESULT;
 - (BidstackAdapterAdInstance * _Nonnull)createAdapterInstance SWIFT_WARN_UNUSED_RESULT;

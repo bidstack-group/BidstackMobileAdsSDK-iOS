@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BidstackMobileAdsSDK-Swift.h</key>
 		<data>
-		13uqAYcp/fRoB1EjC1SNCsVhOKU=
+		EaUKALNEuxKaMU6F64u/jHTMDKA=
 		</data>
 		<key>Headers/BidstackMobileAdsSDK.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Tr7fovJ+SABYlMBYD5jRyz2EvD8=
+		6gBkrTD36B//cyVxK1lZhKASf+Y=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		RsTpG5PkHK6pEs/r2Nd8vKDjHbk=
+		vyPhDSo3xeHECRRxZZunnLd3GGw=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		5AWPOykwpQVApujI2m5klDJ9wOw=
+		+spqxpnj99ZPROvYbUwIglZA9Zs=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<data>
-		THwlhLz6rSr644gM0rQg+3BQF1k=
+		mYrWlfa7iQQyVYsm9fku3VmFwk4=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		yuDzBcdEnFaOOblOXU7o00ULOq8=
+		1KmX8kDAyBjTs0TrjDfe+1oNHPs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,11 +63,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			13uqAYcp/fRoB1EjC1SNCsVhOKU=
+			EaUKALNEuxKaMU6F64u/jHTMDKA=
 			</data>
 			<key>hash2</key>
 			<data>
-			gvUSF0GSTTgvpJjlf/RqEsIG0OqVzCh/q7A5M2dqgS4=
+			u0CFycutequTytO3C2EKQEIMOgwJqtpanTIiRYY9akg=
 			</data>
 		</dict>
 		<key>Headers/BidstackMobileAdsSDK.h</key>
@@ -96,22 +96,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RsTpG5PkHK6pEs/r2Nd8vKDjHbk=
+			vyPhDSo3xeHECRRxZZunnLd3GGw=
 			</data>
 			<key>hash2</key>
 			<data>
-			C9L18u9Mxo8Cgtyu792iGcV5p0rBqI9wlz5pfob02s8=
+			tXRtZjqVCbAXUd/AAyq7QuKotg/ZKOQAK85PMANJ3Mc=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5AWPOykwpQVApujI2m5klDJ9wOw=
+			+spqxpnj99ZPROvYbUwIglZA9Zs=
 			</data>
 			<key>hash2</key>
 			<data>
-			+tDxUurQ8JYxZ4TPYzkpOkU5eCuhMVLiuXPyFiwqcUI=
+			3jtROmGvUS887oMIOMG0vYis5X6axBCLM0NkRRu9KmM=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -129,22 +129,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			THwlhLz6rSr644gM0rQg+3BQF1k=
+			mYrWlfa7iQQyVYsm9fku3VmFwk4=
 			</data>
 			<key>hash2</key>
 			<data>
-			2B/Nwst7kJ8+i5XWhHCls0NI97lygEr23NYbpIFWsOI=
+			LJkt463XVvouSfSZ4f6011zEcbep/wdFjrI9/dHfaGc=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yuDzBcdEnFaOOblOXU7o00ULOq8=
+			1KmX8kDAyBjTs0TrjDfe+1oNHPs=
 			</data>
 			<key>hash2</key>
 			<data>
-			hro/S8Qxj4lEmnmmszqVEqIPrBmqnIso8mIJ75qtLzI=
+			JTm/RbHu/tjM9Ytxiyj5uATTelVB6uyTYO7juvFX8JY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
