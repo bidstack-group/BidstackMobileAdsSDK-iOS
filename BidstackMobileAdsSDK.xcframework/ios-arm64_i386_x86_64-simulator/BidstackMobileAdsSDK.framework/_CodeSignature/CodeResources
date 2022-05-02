@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JfL19arOu+JLzSm7y1SG0KTgj2I=
+		+azMnrVIaFsTnr0Z0bpvCZmNX1U=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JvpuWxL//uyKgbfJYmBvDgkQCWI=
+		a8Ksy3omM5Xr7hARsgDaep/DBlo=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WPv5srvzTFgk9+w4iOftw0qHB8U=
+		Fhn2ZVBpJV9N2NNecf8xEOrdLHA=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AuAU0aaT3s8s8YZ+sj0yogpmvYg=
+		2LwM8lc33p+q19+gOIDZMwf1ud8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -119,11 +119,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JvpuWxL//uyKgbfJYmBvDgkQCWI=
+			a8Ksy3omM5Xr7hARsgDaep/DBlo=
 			</data>
 			<key>hash2</key>
 			<data>
-			MPhKOl0hI9UhlZnamFIFLvzpmL2itJ7FouAqprg6sEo=
+			jV5/9UPhIyO5s8xhdzjcyLkvOfgSO7SpgLlVYBQvxUQ=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -152,11 +152,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WPv5srvzTFgk9+w4iOftw0qHB8U=
+			Fhn2ZVBpJV9N2NNecf8xEOrdLHA=
 			</data>
 			<key>hash2</key>
 			<data>
-			cZZpRz/UCd179pfh5iTpiEppzIEtCglc/3tQ9q1oP+s=
+			Ye7ohHqQEkmRUO7oCoZM4nfOr6Wg19WQz9Cn1kjIF3s=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -185,11 +185,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AuAU0aaT3s8s8YZ+sj0yogpmvYg=
+			2LwM8lc33p+q19+gOIDZMwf1ud8=
 			</data>
 			<key>hash2</key>
 			<data>
-			vn7zaCjLuhhRMsX0W8e+uLmJD9XxEX5kp2K31or3H2U=
+			9onp1Puh/h4y3ug3HreVikHd+mx5I4h/bNYCDJx2TL8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
