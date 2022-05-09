@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BidstackMobileAdsSDK"
-  spec.version      = "1.2.1"
+  spec.version      = "1.2.2"
   spec.summary      = "Bidstack Mobile Ads SDK."
 
   spec.description  = <<-DESC
