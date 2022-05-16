@@ -191,8 +191,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import ObjectiveC;
-@import UIKit;
-@import WebKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -210,14 +208,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class NSString;
-@class NSNumber;
 
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackAPI")
 @interface BidstackAPI : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)authorizeUsingApiKey:(NSString * _Nonnull)apiKey adapterName:(NSString * _Nonnull)adapterName completionHandler:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionHandler;
-- (void)adRequestUsingApiKey:(NSString * _Nonnull)apiKey adUnitId:(NSString * _Nonnull)adUnitId completionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))completionHandler;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol BidstackAdapterDelegate;
@@ -229,6 +224,8 @@ SWIFT_CLASS_NAMED("BidstackAdapterAdInstance")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSString;
+@class NSNumber;
 @class UIViewController;
 
 @interface BidstackAdapterAdInstance (SWIFT_EXTENSION(BidstackMobileAdsSDK))
@@ -265,6 +262,7 @@ enum logLevel : NSInteger;
 
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackLog")
 @interface BidstackLog : NSObject
++ (void)BidstackConsoleActivate;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BidstackLog * _Nonnull shared;)
 + (BidstackLog * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -285,33 +283,6 @@ typedef SWIFT_ENUM(NSInteger, logLevel, open) {
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK17BidstackMobileAds")
 @interface BidstackMobileAds : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSBundle;
-@class NSCoder;
-
-SWIFT_CLASS("_TtC20BidstackMobileAdsSDK18BidstackVASTPlayer")
-@interface BidstackVASTPlayer : UIViewController <UIScrollViewDelegate, WKNavigationDelegate>
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
-- (void)viewDidLayoutSubviews;
-@end
-
-@class WKWebView;
-@class WKNavigation;
-@class WKNavigationAction;
-@class UIScrollView;
-@class UIView;
-@class WKUserContentController;
-@class WKScriptMessage;
-
-@interface BidstackVASTPlayer (SWIFT_EXTENSION(BidstackMobileAdsSDK)) <WKScriptMessageHandler>
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
-- (UIView * _Nullable)viewForZoomingInScrollView:(UIScrollView * _Nonnull)scrollView SWIFT_WARN_UNUSED_RESULT;
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
 
 
@@ -513,8 +484,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import ObjectiveC;
-@import UIKit;
-@import WebKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -532,14 +501,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class NSString;
-@class NSNumber;
 
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackAPI")
 @interface BidstackAPI : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)authorizeUsingApiKey:(NSString * _Nonnull)apiKey adapterName:(NSString * _Nonnull)adapterName completionHandler:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionHandler;
-- (void)adRequestUsingApiKey:(NSString * _Nonnull)apiKey adUnitId:(NSString * _Nonnull)adUnitId completionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))completionHandler;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol BidstackAdapterDelegate;
@@ -551,6 +517,8 @@ SWIFT_CLASS_NAMED("BidstackAdapterAdInstance")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSString;
+@class NSNumber;
 @class UIViewController;
 
 @interface BidstackAdapterAdInstance (SWIFT_EXTENSION(BidstackMobileAdsSDK))
@@ -587,6 +555,7 @@ enum logLevel : NSInteger;
 
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackLog")
 @interface BidstackLog : NSObject
++ (void)BidstackConsoleActivate;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BidstackLog * _Nonnull shared;)
 + (BidstackLog * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -607,33 +576,6 @@ typedef SWIFT_ENUM(NSInteger, logLevel, open) {
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK17BidstackMobileAds")
 @interface BidstackMobileAds : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSBundle;
-@class NSCoder;
-
-SWIFT_CLASS("_TtC20BidstackMobileAdsSDK18BidstackVASTPlayer")
-@interface BidstackVASTPlayer : UIViewController <UIScrollViewDelegate, WKNavigationDelegate>
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
-- (void)viewDidLayoutSubviews;
-@end
-
-@class WKWebView;
-@class WKNavigation;
-@class WKNavigationAction;
-@class UIScrollView;
-@class UIView;
-@class WKUserContentController;
-@class WKScriptMessage;
-
-@interface BidstackVASTPlayer (SWIFT_EXTENSION(BidstackMobileAdsSDK)) <WKScriptMessageHandler>
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
-- (UIView * _Nullable)viewForZoomingInScrollView:(UIScrollView * _Nonnull)scrollView SWIFT_WARN_UNUSED_RESULT;
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
 
 
@@ -835,8 +777,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import ObjectiveC;
-@import UIKit;
-@import WebKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -854,14 +794,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class NSString;
-@class NSNumber;
 
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackAPI")
 @interface BidstackAPI : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)authorizeUsingApiKey:(NSString * _Nonnull)apiKey adapterName:(NSString * _Nonnull)adapterName completionHandler:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionHandler;
-- (void)adRequestUsingApiKey:(NSString * _Nonnull)apiKey adUnitId:(NSString * _Nonnull)adUnitId completionHandler:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))completionHandler;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol BidstackAdapterDelegate;
@@ -873,6 +810,8 @@ SWIFT_CLASS_NAMED("BidstackAdapterAdInstance")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSString;
+@class NSNumber;
 @class UIViewController;
 
 @interface BidstackAdapterAdInstance (SWIFT_EXTENSION(BidstackMobileAdsSDK))
@@ -909,6 +848,7 @@ enum logLevel : NSInteger;
 
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackLog")
 @interface BidstackLog : NSObject
++ (void)BidstackConsoleActivate;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BidstackLog * _Nonnull shared;)
 + (BidstackLog * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -929,33 +869,6 @@ typedef SWIFT_ENUM(NSInteger, logLevel, open) {
 SWIFT_CLASS("_TtC20BidstackMobileAdsSDK17BidstackMobileAds")
 @interface BidstackMobileAds : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSBundle;
-@class NSCoder;
-
-SWIFT_CLASS("_TtC20BidstackMobileAdsSDK18BidstackVASTPlayer")
-@interface BidstackVASTPlayer : UIViewController <UIScrollViewDelegate, WKNavigationDelegate>
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
-- (void)viewDidLayoutSubviews;
-@end
-
-@class WKWebView;
-@class WKNavigation;
-@class WKNavigationAction;
-@class UIScrollView;
-@class UIView;
-@class WKUserContentController;
-@class WKScriptMessage;
-
-@interface BidstackVASTPlayer (SWIFT_EXTENSION(BidstackMobileAdsSDK)) <WKScriptMessageHandler>
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
-- (UIView * _Nullable)viewForZoomingInScrollView:(UIScrollView * _Nonnull)scrollView SWIFT_WARN_UNUSED_RESULT;
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
 
 

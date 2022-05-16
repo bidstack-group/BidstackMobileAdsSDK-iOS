@@ -15,10 +15,7 @@ import _Concurrency
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class BidstackAPI : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc public func authorizeUsing(apiKey: Swift.String, adapterName: Swift.String, completionHandler: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
-  @objc public func adRequestUsing(apiKey: Swift.String, adUnitId: Swift.String, completionHandler: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BidstackAPI : ObjectiveC.NSObject {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class BidstackHelper {
@@ -111,44 +108,9 @@ extension BidstackMobileAdsSDK.BidstackAdapterAdInstance {
   @objc dynamic public func showAd(fromViewController viewController: UIKit.UIViewController)
   @objc dynamic public func isAdAvailable() -> Swift.Bool
 }
-extension BidstackMobileAdsSDK.BidstackAdapterAdInstance : BidstackMobileAdsSDK.BidstackVASTPlayerDelegate {
-  public func adDidLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  public func adDidOpen(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  public func adDidClose(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  public func adDidShowSucceed(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  public func adDidClick(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, clickUrl: Swift.String)
-  public func adDidReward(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  public func adDidFailToLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
-  public func adDidFailToShow(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
-}
-public protocol BidstackVASTPlayerDelegate : AnyObject {
-  func adDidLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  func adDidOpen(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  func adDidClose(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  func adDidShowSucceed(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  func adDidClick(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, clickUrl: Swift.String)
-  func adDidReward(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
-  func adDidFailToLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
-  func adDidFailToShow(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class BidstackVASTPlayer : UIKit.UIViewController, WebKit.WKNavigationDelegate, UIKit.UIScrollViewDelegate {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: BidstackMobileAdsSDK.BidstackVASTPlayerDelegate?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
-  @_Concurrency.MainActor(unsafe) public func set(vastUrl url: Swift.String)
-  @_Concurrency.MainActor(unsafe) public func loadPlayer(forRewardedVideo isRewardedVideo: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) public func presentFrom(_ viewController: UIKit.UIViewController)
-  @objc deinit
-}
-extension BidstackMobileAdsSDK.BidstackVASTPlayer : WebKit.WKScriptMessageHandler {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func viewForZooming(in scrollView: UIKit.UIScrollView) -> UIKit.UIView?
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
-}
 public func BILog(logLevel: BidstackMobileAdsSDK.BidstackLog.logLevel = .debug, _ string: Any?, _ fileName: Swift.String = #file, _ lineNum: Swift.Int = #line)
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class BidstackLog : ObjectiveC.NSObject {
+  @objc final public class func BidstackConsoleActivate()
   @objc public enum logLevel : Swift.Int {
     case none
     case info
