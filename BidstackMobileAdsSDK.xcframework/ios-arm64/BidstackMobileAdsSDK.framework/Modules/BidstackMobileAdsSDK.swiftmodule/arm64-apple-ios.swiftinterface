@@ -108,14 +108,14 @@ extension BidstackMobileAdsSDK.BidstackAdapterAdInstance {
   @objc dynamic public func showAd(fromViewController viewController: UIKit.UIViewController)
   @objc dynamic public func isAdAvailable() -> Swift.Bool
 }
-public func BILog(logLevel: BidstackMobileAdsSDK.BidstackLog.logLevel = .debug, _ string: Any?, _ fileName: Swift.String = #file, _ lineNum: Swift.Int = #line)
+public func BILog(_ logLevel: BidstackMobileAdsSDK.BidstackLog.logLevel = .debug, _ string: Any?)
 @_inheritsConvenienceInitializers @objc final public class BidstackLog : ObjectiveC.NSObject {
   @objc public enum logLevel : Swift.Int {
-    case none
     case info
     case debug
+    case warning
     case error
-    case verbose
+    case critical
     public init?(rawValue: Swift.Int)
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
@@ -123,10 +123,10 @@ public func BILog(logLevel: BidstackMobileAdsSDK.BidstackLog.logLevel = .debug, 
     }
   }
   @objc public static let shared: BidstackMobileAdsSDK.BidstackLog
-  @objc final public func initialize()
-  @objc final public func set(logLevel level: BidstackMobileAdsSDK.BidstackLog.logLevel)
-  @objc final public func logInfo(format: Swift.String, args: [ObjectiveC.NSObject])
-  @objc final public func log(logLevel: BidstackMobileAdsSDK.BidstackLog.logLevel = .info, _ string: Any?, _ fileName: Swift.String = #file, _ lineNum: Swift.Int = #line)
+  @objc final public func initialize(withAdapterName name: Swift.String)
+  @objc final public func logInfo(string: Swift.String)
+  @objc final public func logError(string: Swift.String)
+  @objc final public func log(_ logLevel: BidstackMobileAdsSDK.BidstackLog.logLevel = .info, _ string: Any?)
   @objc override dynamic public init()
   @objc deinit
 }

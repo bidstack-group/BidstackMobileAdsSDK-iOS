@@ -190,7 +190,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -265,19 +264,19 @@ SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackLog")
 @interface BidstackLog : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BidstackLog * _Nonnull shared;)
 + (BidstackLog * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (void)initialize;
-- (void)setWithLogLevel:(enum logLevel)level;
-- (void)logInfoWithFormat:(NSString * _Nonnull)format args:(NSArray<NSObject *> * _Nonnull)args;
-- (void)logWithLogLevel:(enum logLevel)logLevel :(id _Nullable)string :(NSString * _Nonnull)fileName :(NSInteger)lineNum;
+- (void)initializeWithAdapterName:(NSString * _Nonnull)name;
+- (void)logInfoWithString:(NSString * _Nonnull)string;
+- (void)logErrorWithString:(NSString * _Nonnull)string;
+- (void)log:(enum logLevel)logLevel :(id _Nullable)string;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 typedef SWIFT_ENUM(NSInteger, logLevel, open) {
-  logLevelNone = 0,
-  logLevelInfo = 1,
-  logLevelDebug = 2,
+  logLevelInfo = 0,
+  logLevelDebug = 1,
+  logLevelWarning = 2,
   logLevelError = 3,
-  logLevelVerbose = 4,
+  logLevelCritical = 4,
 };
 
 
@@ -484,7 +483,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -559,19 +557,19 @@ SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackLog")
 @interface BidstackLog : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BidstackLog * _Nonnull shared;)
 + (BidstackLog * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (void)initialize;
-- (void)setWithLogLevel:(enum logLevel)level;
-- (void)logInfoWithFormat:(NSString * _Nonnull)format args:(NSArray<NSObject *> * _Nonnull)args;
-- (void)logWithLogLevel:(enum logLevel)logLevel :(id _Nullable)string :(NSString * _Nonnull)fileName :(NSInteger)lineNum;
+- (void)initializeWithAdapterName:(NSString * _Nonnull)name;
+- (void)logInfoWithString:(NSString * _Nonnull)string;
+- (void)logErrorWithString:(NSString * _Nonnull)string;
+- (void)log:(enum logLevel)logLevel :(id _Nullable)string;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 typedef SWIFT_ENUM(NSInteger, logLevel, open) {
-  logLevelNone = 0,
-  logLevelInfo = 1,
-  logLevelDebug = 2,
+  logLevelInfo = 0,
+  logLevelDebug = 1,
+  logLevelWarning = 2,
   logLevelError = 3,
-  logLevelVerbose = 4,
+  logLevelCritical = 4,
 };
 
 
