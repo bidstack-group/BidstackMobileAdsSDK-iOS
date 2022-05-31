@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BidstackMobileAdsSDK"
-  spec.version      = "1.2.3"
+  spec.version      = "1.4.0"
   spec.summary      = "Bidstack Mobile Ads SDK."
 
   spec.description  = <<-DESC
@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
 
   spec.author       = { "Alexey Volkov" => "aleksejs.volkovs@bidstack.com" }
-  spec.platform     = :ios, "10.0"
+  spec.platform     = :ios, "11.0"
   spec.swift_version = '5.0'
   
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
@@ -22,5 +22,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/bidstack-group/BidstackMobileAdsSDK-iOS.git", :tag => "v#{spec.version}" }
   
   spec.vendored_frameworks = "BidstackMobileAdsSDK.xcframework"
+
+  spec.dependency 'DatadogSDK', '~> 1.10.0'
  	
 end
