@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BidstackMobileAdsSDK-Swift.h</key>
 		<data>
-		fzCPc6QdQ+Fii0wyBjBFRnXD+HU=
+		H5hRFuoCv9wFVhGmbFeHtvr8NBA=
 		</data>
 		<key>Headers/BidstackMobileAdsSDK.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AwqDZwvTOpojwxvXA79BNvYPvNU=
+		ymp8JJoE4S+/3r91tJoW4Ri/yMg=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		z2p/6W9QpNbyk5ldKRo5IWs8BSE=
+		ohtTdyxjWPh1WoiP7GujONwp0FI=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ue4Ff5eE21rxzthYs7H10XoXeSQ=
+		64oFfODUPjH5Tl7pnhF9ByRKohw=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		z2p/6W9QpNbyk5ldKRo5IWs8BSE=
+		ohtTdyxjWPh1WoiP7GujONwp0FI=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ue4Ff5eE21rxzthYs7H10XoXeSQ=
+		64oFfODUPjH5Tl7pnhF9ByRKohw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,15 +46,23 @@
 		</data>
 		<key>VASTPlayer/BidstackVASTPlayer.html</key>
 		<data>
-		nq6boyl88xs7VdcmkyUVtIwMl94=
+		bhVcTJOzfXh+79os5gzQ4l+ILwk=
 		</data>
 		<key>VASTPlayer/scripts/main.js</key>
 		<data>
-		yFypJvQfohtVsYbf2AmnXvrOPLo=
+		rNBW/LFUbZlcimRnkksGSXCAiFo=
 		</data>
 		<key>VASTPlayer/scripts/vast-player.min.js</key>
 		<data>
 		swUSWlmYT94xVsG6v8hWDM3IWfE=
+		</data>
+		<key>VASTPlayer/styles/main.css</key>
+		<data>
+		o8LGGPoB9B2Q6griRHbTYJbNdFo=
+		</data>
+		<key>VASTPlayer/styles/normalize.css</key>
+		<data>
+		i2zYmmkYM+yG9r7lTIJc4ylksVo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ex0VS5cwc3e7G0CCSMa1hoeAgRMV8r4Hqa8OMsHsm4=
+			r046m7kN3HnQm1drgRcQeyhEDCqjSLdmpuNM4uDYezs=
 			</data>
 		</dict>
 		<key>Headers/BidstackMobileAdsSDK.h</key>
@@ -84,14 +92,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KxNwWta5q3BD0POhlYLUCsqyiN48ag4AKSGjER6Wkh8=
+			ywT1z/tkaK1zKO/j8cfoVsXgleHGUE/gut1/W0SLoWI=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			isk3jS6hNk+y3SdYH1Z6bxrHVEO6RxIqLYNpjhJe/ug=
+			6MNj+/jloB9NXPB8f6cjY6EEyxiSwGMOPWHbsSA6ERU=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64.swiftdoc</key>
@@ -105,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KxNwWta5q3BD0POhlYLUCsqyiN48ag4AKSGjER6Wkh8=
+			ywT1z/tkaK1zKO/j8cfoVsXgleHGUE/gut1/W0SLoWI=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			isk3jS6hNk+y3SdYH1Z6bxrHVEO6RxIqLYNpjhJe/ug=
+			6MNj+/jloB9NXPB8f6cjY6EEyxiSwGMOPWHbsSA6ERU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -126,14 +134,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2+pDV7+gpRJx55MkK0kBicV+RbYvHT54ZVrV4kPGd6k=
+			Wj2a8W2odFsbvrvTpf4P8okvFcBxvRH99m0OxKlPg7s=
 			</data>
 		</dict>
 		<key>VASTPlayer/scripts/main.js</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RAr07h6snzytzVMsisL1ohSf3VqBxM4H89cVTz2uDfA=
+			xb+ZyU6ZBx7ggbDoO4n+dGxwkDZyPTmIPY6W1H7OYhs=
 			</data>
 		</dict>
 		<key>VASTPlayer/scripts/vast-player.min.js</key>
@@ -141,6 +149,20 @@
 			<key>hash2</key>
 			<data>
 			ugnyw1bHSzXqc3U5RpUDg1ajBp+h50cmUnkWI21QnJ8=
+			</data>
+		</dict>
+		<key>VASTPlayer/styles/main.css</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rCAmSD0So1jNgVNjvNahWPfjAQJUU6CwyuwWiwDdtuM=
+			</data>
+		</dict>
+		<key>VASTPlayer/styles/normalize.css</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WDj1IkRqHnxCuyUMAuoraDotOq9OIir/+YMW/bWS4d4=
 			</data>
 		</dict>
 	</dict>

@@ -5,7 +5,7 @@
  * https://www.iab.com/wp-content/uploads/2015/06/VPAID_2_0_Final_04-10-2012.pdf
  */
 
-var VAST_PLAYER_VERSION = "1.0.1";
+var VAST_PLAYER_VERSION = "1.1.0";
 
 // create player instance
 var player = new VASTPlayer(document.getElementById('ad-container'));
@@ -55,7 +55,7 @@ function AdLoad(url){
         console.log("AdLoadError", errorMessage);
 
         if (isAndroid) {
-            PlayerJSInterface.onAdLoadError(errorMessage);
+            PlayerJSInterface.onAdLoadError(errorMessage.toString(), errorMessage.stack);
         } else {
             webkitEvent("ad-did-load-error", "Internal Error");
         }
@@ -200,8 +200,59 @@ player.on('AdError', function(errorMessage) {
     console.log('AdError', errorMessage);
 
     if (isAndroid) {
-        PlayerJSInterface.onAdError(errorMessage);
+        PlayerJSInterface.onAdError(errorMessage.toString(), errorMessage.stack);
     } else {
         webkitEvent("ad-error?message", errorMessage);
     }
 });
+
+player.on('AdInteraction', function(id) {
+    console.log('AdInteraction');
+
+    if (isAndroid) {
+        PlayerJSInterface.onAdInteraction();
+    } else {
+        webkitEvent('ad-interaction');
+    }
+});
+
+player.on('AdVideoFirstQuartile', function() {
+    console.log('AdVideoFirstQuartile');
+
+    if (isAndroid) {
+        PlayerJSInterface.onAdVideoFirstQuartile();
+    } else {
+        webkitEvent('ad-video-first-quartile');
+    }
+});
+
+player.on('AdVideoMidpoint', function() {
+    console.log('AdVideoMidpoint');
+
+    if (isAndroid) {
+        PlayerJSInterface.onAdVideoMidpoint();
+    } else {
+        webkitEvent('ad-video-midpoint');
+    }
+});
+
+player.on('AdVideoThirdQuartile', function() {
+    console.log('AdVideoThirdQuartile');
+
+    if (isAndroid) {
+        PlayerJSInterface.onAdVideoThirdQuartile();
+    } else {
+        webkitEvent('ad-video-third-quartile');
+    }
+});
+
+player.on('AdVolumeChange', function() {
+    console.log('AdVolumeChange', player.adVolume);
+
+    if (isAndroid) {
+        PlayerJSInterface.onAdVolumeChange(player.adVolume);
+    } else {
+        webkitEvent('ad-volume-change', player.adVolume);
+    }
+});
+

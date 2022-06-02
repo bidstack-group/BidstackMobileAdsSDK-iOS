@@ -253,7 +253,6 @@ SWIFT_CLASS_NAMED("BidstackAdapterInterface")
 @interface BidstackAdapterInterface : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)initializeWithApiKey:(NSString * _Nonnull)key adapterName:(NSString * _Nonnull)adapterName completionBlock:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionBlock;
-- (void)initializeWithApiKey:(NSString * _Nonnull)key completionBlock:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionBlock;
 - (NSString * _Nonnull)networkVersion SWIFT_WARN_UNUSED_RESULT;
 - (BidstackAdapterAdInstance * _Nonnull)createAdapterInstance SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -546,7 +545,6 @@ SWIFT_CLASS_NAMED("BidstackAdapterInterface")
 @interface BidstackAdapterInterface : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)initializeWithApiKey:(NSString * _Nonnull)key adapterName:(NSString * _Nonnull)adapterName completionBlock:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionBlock;
-- (void)initializeWithApiKey:(NSString * _Nonnull)key completionBlock:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionBlock;
 - (NSString * _Nonnull)networkVersion SWIFT_WARN_UNUSED_RESULT;
 - (BidstackAdapterAdInstance * _Nonnull)createAdapterInstance SWIFT_WARN_UNUSED_RESULT;
 @end
