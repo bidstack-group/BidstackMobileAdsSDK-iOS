@@ -1,26 +1,26 @@
 html,
-body {
+body,
+#video-container,
+#ad-container,
+#ad-container > div {
     height: 100%;
+    width: 100%
 }
 
 body {
     background: black;
 }
 
-#ad-container {
+#ad-container > div {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+}
+
+#ad-container > div > video {
+    position: absolute;
 }
 
 .icon-close {
     position: absolute;
-    /* For Android
-    width: 62px;
-    height: 62px;
-    top: 50px;
-    left: 50px;
-    */
     width: 25px;
     height: 25px;
     top: 20px;
