@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ANQPOGIvXXiUnQFv0MdXz3LUDPY=
+		wHAAj+jaU1xbaOROSW40g+t4zes=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		64oFfODUPjH5Tl7pnhF9ByRKohw=
+		rcmTOTmXgNFrlYwfxtKGlWluGZs=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,31 +38,11 @@
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		64oFfODUPjH5Tl7pnhF9ByRKohw=
+		rcmTOTmXgNFrlYwfxtKGlWluGZs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		4y7lde8M9AIFWx5Dk4CCbbBfWPE=
-		</data>
-		<key>VASTPlayer/BidstackVASTPlayer.html</key>
-		<data>
-		Eh5DNxp4rhQUv5bfFp3W1+PQ8vs=
-		</data>
-		<key>VASTPlayer/scripts/ad-manager.js</key>
-		<data>
-		821eMW45+iywoy3K5d5iLstvK6k=
-		</data>
-		<key>VASTPlayer/scripts/main.js</key>
-		<data>
-		S13eccvxaaKGcv/O1XAecpgE5nI=
-		</data>
-		<key>VASTPlayer/styles/main.css</key>
-		<data>
-		qhtpXNhl4MGP8W3Kt4ubcTL30+M=
-		</data>
-		<key>VASTPlayer/styles/normalize.css</key>
-		<data>
-		i2zYmmkYM+yG9r7lTIJc4ylksVo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -99,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6MNj+/jloB9NXPB8f6cjY6EEyxiSwGMOPWHbsSA6ERU=
+			pNxaTBczjXQMAv5zze3ExbaZYBQrhwgOkSb/mvFQVxQ=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64.swiftdoc</key>
@@ -120,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6MNj+/jloB9NXPB8f6cjY6EEyxiSwGMOPWHbsSA6ERU=
+			pNxaTBczjXQMAv5zze3ExbaZYBQrhwgOkSb/mvFQVxQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -128,41 +108,6 @@
 			<key>hash2</key>
 			<data>
 			b0/7VdmvR/WPVUrh7L820QuH+I+KKCkitxhaQhTDgNY=
-			</data>
-		</dict>
-		<key>VASTPlayer/BidstackVASTPlayer.html</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Tx5ArPVIovwcgURoOhpMAuUX5fJJEwBxV68BwEiqGMI=
-			</data>
-		</dict>
-		<key>VASTPlayer/scripts/ad-manager.js</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			AEP9sFE5gUAQEXW4V9ps8fP/cj4JLdTHV/siX227XR8=
-			</data>
-		</dict>
-		<key>VASTPlayer/scripts/main.js</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yD/m4rTESDPUK1+65sGQjOLk5/BH1Ojcb+RDxVJW+oQ=
-			</data>
-		</dict>
-		<key>VASTPlayer/styles/main.css</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4HHVRt32ARdaxN0cT+I7PRGnASaVs/tRzTRF8Bx4y4g=
-			</data>
-		</dict>
-		<key>VASTPlayer/styles/normalize.css</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WDj1IkRqHnxCuyUMAuoraDotOq9OIir/+YMW/bWS4d4=
 			</data>
 		</dict>
 	</dict>
