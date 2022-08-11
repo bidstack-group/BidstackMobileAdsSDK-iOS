@@ -188,6 +188,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -211,6 +212,17 @@ SWIFT_CLASS("_TtC20BidstackMobileAdsSDK11BidstackAPI")
 @interface BidstackAPI : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSURLSession;
+@class NSURLAuthenticationChallenge;
+@class NSURLCredential;
+@class NSURLSessionDataTask;
+@class NSURLResponse;
+
+@interface BidstackAPI (SWIFT_EXTENSION(BidstackMobileAdsSDK)) <NSURLSessionDataDelegate>
+- (void)URLSession:(NSURLSession * _Nonnull)session didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
+- (void)URLSession:(NSURLSession * _Nonnull)session dataTask:(NSURLSessionDataTask * _Nonnull)dataTask didReceiveResponse:(NSURLResponse * _Nonnull)response completionHandler:(void (^ _Nonnull)(NSURLSessionResponseDisposition))completionHandler;
 @end
 
 @protocol BidstackAdapterDelegate;
@@ -269,11 +281,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BidstackLog 
 @end
 
 typedef SWIFT_ENUM(NSInteger, logLevel, open) {
-  logLevelInfo = 0,
-  logLevelDebug = 1,
+  logLevelDebug = 0,
+  logLevelInfo = 1,
   logLevelWarning = 2,
   logLevelError = 3,
   logLevelCritical = 4,
+};
+
+typedef SWIFT_ENUM(NSInteger, AllowedDataDogLogs, open) {
+  AllowedDataDogLogsNoLogs = 0,
+  AllowedDataDogLogsError = 1,
+  AllowedDataDogLogsInfoError = 2,
+  AllowedDataDogLogsAll = 3,
 };
 
 

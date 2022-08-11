@@ -5,7 +5,9 @@ import AdSupport
 @_exported import BidstackMobileAdsSDK
 import CoreTelephony
 import Datadog
+import DatadogCrashReporting
 import Foundation
+import SafariServices
 import Swift
 import SystemConfiguration
 import UIKit
@@ -17,6 +19,10 @@ import _Concurrency
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BidstackAPI : ObjectiveC.NSObject {
   @objc deinit
+}
+extension BidstackMobileAdsSDK.BidstackAPI : Foundation.URLSessionDelegate, Foundation.URLSessionDataDelegate {
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers public class BidstackHelper {
   public enum BidstackNetworkType : Swift.String {
@@ -106,15 +112,27 @@ extension BidstackMobileAdsSDK.BidstackAdapterAdInstance {
   @objc dynamic public func loadAd(apiKey: Swift.String, adUnitId: Swift.String, isRewardedVideo: Swift.Bool)
   @objc dynamic public func showAd(fromViewController viewController: UIKit.UIViewController)
   @objc dynamic public func isAdAvailable() -> Swift.Bool
+  public func setCustom(VASTUrl url: Swift.String, playFromViewController playViewController: UIKit.UIViewController)
 }
-public func BILog(_ logLevel: BidstackMobileAdsSDK.BidstackLog.logLevel = .debug, _ string: Any?)
+public func BILog(_ logLevel: BidstackMobileAdsSDK.BidstackLog.logLevel = .debug, _ string: Any?, _ attributes: [Swift.String : Swift.Encodable]? = nil)
 @_inheritsConvenienceInitializers @objc final public class BidstackLog : ObjectiveC.NSObject {
   @objc public enum logLevel : Swift.Int {
-    case info
     case debug
+    case info
     case warning
     case error
     case critical
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public enum AllowedDataDogLogs : Swift.Int {
+    case noLogs
+    case error
+    case infoError
+    case all
     public init?(rawValue: Swift.Int)
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
@@ -135,3 +153,6 @@ extension BidstackMobileAdsSDK.BidstackHelper.BidstackNetworkType : Swift.RawRep
 extension BidstackMobileAdsSDK.BidstackLog.logLevel : Swift.Equatable {}
 extension BidstackMobileAdsSDK.BidstackLog.logLevel : Swift.Hashable {}
 extension BidstackMobileAdsSDK.BidstackLog.logLevel : Swift.RawRepresentable {}
+extension BidstackMobileAdsSDK.BidstackLog.AllowedDataDogLogs : Swift.Equatable {}
+extension BidstackMobileAdsSDK.BidstackLog.AllowedDataDogLogs : Swift.Hashable {}
+extension BidstackMobileAdsSDK.BidstackLog.AllowedDataDogLogs : Swift.RawRepresentable {}
