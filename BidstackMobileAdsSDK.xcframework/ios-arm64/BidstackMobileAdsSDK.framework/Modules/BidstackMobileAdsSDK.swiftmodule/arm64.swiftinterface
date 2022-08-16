@@ -4,6 +4,8 @@
 import AdSupport
 @_exported import BidstackMobileAdsSDK
 import CoreTelephony
+import Datadog
+import DatadogCrashReporting
 import Foundation
 import SafariServices
 import Swift
