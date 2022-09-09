@@ -1,0 +1,4 @@
+module OMSDK_Bidstack {
+    header "Headers/OMIDImports.h"
+    export *
+}
