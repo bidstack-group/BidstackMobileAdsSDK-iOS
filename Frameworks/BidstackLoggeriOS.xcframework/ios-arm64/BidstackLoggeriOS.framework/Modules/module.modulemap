@@ -1,0 +1,11 @@
+framework module BidstackLoggeriOS {
+  umbrella header "BidstackLoggeriOS.h"
+
+  export *
+  module * { export * }
+}
+
+module BidstackLoggeriOS.Swift {
+    header "BidstackLoggeriOS-Swift.h"
+    requires objc
+}
