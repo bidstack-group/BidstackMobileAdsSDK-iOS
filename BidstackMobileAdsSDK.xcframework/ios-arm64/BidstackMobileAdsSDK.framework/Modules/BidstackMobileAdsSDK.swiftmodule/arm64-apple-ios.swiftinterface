@@ -1,11 +1,11 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidstackMobileAdsSDK
+import AVFoundation
 import AdSupport
 @_exported import BidstackMobileAdsSDK
 import CoreTelephony
 import Foundation
-import OMSDK_Bidstack
 import SafariServices
 import Swift
 import SystemConfiguration
@@ -13,15 +13,27 @@ import UIKit
 import WebKit
 import _Concurrency
 @_inheritsConvenienceInitializers @objc public class BidstackMobileAds : ObjectiveC.NSObject {
+  @objc public enum LogLevel : Swift.Int {
+    case debug
+    case info
+    case notice
+    case warning
+    case error
+    case critical
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public class func InitLogger(withAdapterName adapterName: Swift.String, applicationName appName: Swift.String)
+  @objc public class func EnableFullVerboseMode()
+  @objc public class func Log(_ logLevel: BidstackMobileAdsSDK.BidstackMobileAds.LogLevel, logMessage: Any?, attributes: [Swift.String : Swift.AnyObject]? = nil)
   @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BidstackAPI : ObjectiveC.NSObject {
   @objc deinit
-}
-extension BidstackMobileAdsSDK.BidstackAPI : Foundation.URLSessionDelegate, Foundation.URLSessionDataDelegate {
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers public class BidstackHelper {
   public enum BidstackNetworkType : Swift.String {
@@ -113,47 +125,11 @@ extension BidstackMobileAdsSDK.BidstackAdapterAdInstance {
   @objc dynamic public func loadAd(apiKey: Swift.String, adUnitId: Swift.String, isRewardedVideo: Swift.Bool)
   @objc dynamic public func showAd(fromViewController viewController: UIKit.UIViewController)
   @objc dynamic public func isAdAvailable() -> Swift.Bool
-  public func setCustom(VASTUrl url: Swift.String, playFromViewController playViewController: UIKit.UIViewController)
+  public func setCustom(VASTUrl url: Swift.String, VASTPlayerUrl playerUrl: Swift.String, playFromViewController playViewController: UIKit.UIViewController)
 }
-public func BILog(_ logLevel: BidstackMobileAdsSDK.BidstackLog.logLevel = .debug, _ string: Any?, _ attributes: [Swift.String : Swift.Encodable]? = nil)
-@_inheritsConvenienceInitializers @objc final public class BidstackLog : ObjectiveC.NSObject {
-  @objc public enum logLevel : Swift.Int {
-    case debug
-    case info
-    case warning
-    case error
-    case critical
-    public init?(rawValue: Swift.Int)
-    public typealias RawValue = Swift.Int
-    public var rawValue: Swift.Int {
-      get
-    }
-  }
-  @objc public enum AllowedDataDogLogs : Swift.Int {
-    case noLogs
-    case error
-    case infoError
-    case all
-    public init?(rawValue: Swift.Int)
-    public typealias RawValue = Swift.Int
-    public var rawValue: Swift.Int {
-      get
-    }
-  }
-  @objc public static let shared: BidstackMobileAdsSDK.BidstackLog
-  @objc final public func initialize(withAdapterName name: Swift.String)
-  @objc final public func logInfo(string: Swift.String)
-  @objc final public func logError(string: Swift.String)
-  @objc final public func log(_ logLevel: BidstackMobileAdsSDK.BidstackLog.logLevel = .info, _ string: Any?)
-  @objc override dynamic public init()
-  @objc deinit
-}
+extension BidstackMobileAdsSDK.BidstackMobileAds.LogLevel : Swift.Equatable {}
+extension BidstackMobileAdsSDK.BidstackMobileAds.LogLevel : Swift.Hashable {}
+extension BidstackMobileAdsSDK.BidstackMobileAds.LogLevel : Swift.RawRepresentable {}
 extension BidstackMobileAdsSDK.BidstackHelper.BidstackNetworkType : Swift.Equatable {}
 extension BidstackMobileAdsSDK.BidstackHelper.BidstackNetworkType : Swift.Hashable {}
 extension BidstackMobileAdsSDK.BidstackHelper.BidstackNetworkType : Swift.RawRepresentable {}
-extension BidstackMobileAdsSDK.BidstackLog.logLevel : Swift.Equatable {}
-extension BidstackMobileAdsSDK.BidstackLog.logLevel : Swift.Hashable {}
-extension BidstackMobileAdsSDK.BidstackLog.logLevel : Swift.RawRepresentable {}
-extension BidstackMobileAdsSDK.BidstackLog.AllowedDataDogLogs : Swift.Equatable {}
-extension BidstackMobileAdsSDK.BidstackLog.AllowedDataDogLogs : Swift.Hashable {}
-extension BidstackMobileAdsSDK.BidstackLog.AllowedDataDogLogs : Swift.RawRepresentable {}
