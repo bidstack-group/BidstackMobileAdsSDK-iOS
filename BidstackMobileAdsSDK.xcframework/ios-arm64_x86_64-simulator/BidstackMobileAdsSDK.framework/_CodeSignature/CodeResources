@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		syCrTaaPYKgOYRXDrqeOh5UeZec=
+		62H9+nrfiKjZsVIqMsIBO9IeYLk=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pO4bCf3vhR90kNzRoqOzLdlKN5Q=
+		tpZTMGeYnAFFQqcBfhogm+Ww4fQ=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sBYIxfmnsZ/62SXMeaiYrVjcqx8=
+		rHtpUqp196IZoKac0TdipebgvgE=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dEZ0VMZFt5UIHQE5j4L+1Cq+O4k=
+		j3rIpZmRLjv23EqfImkpReyPV24=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		21l64hsBY8MMsPqi3BjhLrqS2Z8=
+		OjjY5eKZiIqqfTopclz0dC6Vs4E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/ym4JyvTNINxZilL6YmJkH3ISKeI8LCRPTmzphk5n+Y=
+			h//t+lZfDypB9Zs3wchx0yHRaYFfkHI6i/6ODz/uWCw=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mo8jgCWESa3od1418PQOFi51g7amSsOaXzpKAyMGVdE=
+			IpRqblvZAwCEDttteZATSSnNIvYw59p2eRRxkCKHakc=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JG9IllKCPFZ2f8nAbwUTs4gyIlyEJZhWW0mbUFiSdps=
+			c7ARyIJyz5Mgp95AxUbYYqHGOmIFzbj3sKy+am57ydk=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			giGJr/jfh56Ay8lRZaGHvaUwZu7AD2MvGNR1pH3xGg0=
+			ElxWg2AtEphlUENo9sM2f6d8xDsoQSJDcGtnKYvg4I4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

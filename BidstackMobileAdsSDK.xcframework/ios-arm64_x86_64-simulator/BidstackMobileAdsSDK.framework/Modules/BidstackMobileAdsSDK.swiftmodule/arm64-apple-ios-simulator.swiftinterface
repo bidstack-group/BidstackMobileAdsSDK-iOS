@@ -26,11 +26,11 @@ import _Concurrency
       get
     }
   }
+  @objc deinit
   @objc public class func InitLogger(withAdapterName adapterName: Swift.String, applicationName appName: Swift.String)
   @objc public class func EnableFullVerboseMode()
   @objc public class func Log(_ logLevel: BidstackMobileAdsSDK.BidstackMobileAds.LogLevel, logMessage: Any?, attributes: [Swift.String : Swift.AnyObject]? = nil)
   @objc override dynamic public init()
-  @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BidstackAPI : ObjectiveC.NSObject {
   @objc deinit
