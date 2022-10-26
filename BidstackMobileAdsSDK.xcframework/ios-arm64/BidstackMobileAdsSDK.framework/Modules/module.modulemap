@@ -6,6 +6,6 @@ framework module BidstackMobileAdsSDK {
 }
 
 module BidstackMobileAdsSDK.Swift {
-    header "BidstackMobileAdsSDK-Swift.h"
-    requires objc
+  header "BidstackMobileAdsSDK-Swift.h"
+  requires objc
 }

@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidstackMobileAdsSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AdSupport
 @_exported import BidstackMobileAdsSDK
@@ -12,7 +13,9 @@ import SystemConfiguration
 import UIKit
 import WebKit
 import _Concurrency
+import _StringProcessing
 @_inheritsConvenienceInitializers @objc public class BidstackMobileAds : ObjectiveC.NSObject {
+  @objc public static let shared: BidstackMobileAdsSDK.BidstackMobileAds
   @objc public enum LogLevel : Swift.Int {
     case debug
     case info
@@ -26,7 +29,10 @@ import _Concurrency
       get
     }
   }
+  @objc public func InitializeNetwork(fromAdapterName adapterName: Swift.String, appName: Swift.String)
   @objc deinit
+  @objc public func Destroy()
+  @objc public func AdapterInterface() -> BidstackMobileAdsSDK.BidstackAdapterInterface?
   @objc public class func InitLogger(withAdapterName adapterName: Swift.String, applicationName appName: Swift.String)
   @objc public class func EnableFullVerboseMode()
   @objc public class func Log(_ logLevel: BidstackMobileAdsSDK.BidstackMobileAds.LogLevel, logMessage: Any?, attributes: [Swift.String : Swift.AnyObject]? = nil)
@@ -110,8 +116,6 @@ extension UIKit.UIDevice {
 }
 @_inheritsConvenienceInitializers @objc(BidstackAdapterInterface) public class BidstackAdapterInterface : ObjectiveC.NSObject {
   @objc override dynamic public init()
-  @available(*, deprecated, message: "Use initialize(apiKey key: String, adapterName: String, adapterVersion: String, completionBlock: @escaping (Bool, String?)->Void)")
-  @objc public func initialize(apiKey key: Swift.String, adapterName: Swift.String, completionBlock: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
   @objc public func initialize(apiKey key: Swift.String, adapterName: Swift.String, adapterVersion: Swift.String, completionBlock: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
   @objc public func networkVersion() -> Swift.String
   @objc public func createAdapterInstance() -> BidstackMobileAdsSDK.BidstackAdapterAdInstance
