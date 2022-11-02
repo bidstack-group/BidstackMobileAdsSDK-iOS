@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BidstackMobileAdsSDK-Swift.h</key>
 		<data>
-		hn3FOFkaHjdeEdwEOGlMuPAgAiM=
+		pvpt5F+aG6SyzZ6qfGzevCrIGro=
 		</data>
 		<key>Headers/BidstackMobileAdsSDK.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/YoHUj0d01i1AKlu1Ga0RjXJxt0=
+		f5IozzkjK0Am/o3ReGCIl7m+iOQ=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		a7LPfMnbEN6dvMGhy4kk6GQ7mLQ=
+		T3tFdauSiaqx235JKfCxf3OdJGU=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0hfgFBZqIqv/OPJbelmg5EnA3c8=
+		rDzw6NPOfTJGVZxQuUsFx/Uzg5o=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		P4FyuWJV14yTDkiNt/aAHLaA8T8=
+		nndVpYkM1euFlMhTXQbRcWh4erg=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0hfgFBZqIqv/OPJbelmg5EnA3c8=
+		rDzw6NPOfTJGVZxQuUsFx/Uzg5o=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ieeWXXEw7PPazvziBnSrf+b78bI=
+		jEIIhpUXz42yj+V906AqikFuuxU=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		a7LPfMnbEN6dvMGhy4kk6GQ7mLQ=
+		T3tFdauSiaqx235JKfCxf3OdJGU=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		7cApmlg4p/yEbCunQOpd18RUd3w=
+		QoofzrKlMogHio4EVP0s6q4JAoA=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		38ibDGDYrHC6h12R6HTfW9PHzmg=
+		smK/5k0t5akAoPRxrHfwE/wewUc=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7cApmlg4p/yEbCunQOpd18RUd3w=
+		QoofzrKlMogHio4EVP0s6q4JAoA=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XC/Sl2+qfDca3rcyD7RYTgWHdpk=
+		/TQsHhBM+S9gvbHXdN6MHtSSMuE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mDQZR3QN9DLmNgpXJDoashl4rbFa7+MTK2RoUtoRvvU=
+			0Yu5jGXnsxveoPKqaojMN9v8r9EahzFAxHeg0HVOfNQ=
 			</data>
 		</dict>
 		<key>Headers/BidstackMobileAdsSDK.h</key>
@@ -81,70 +81,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BBP67UNZ0wmm6XUAz1lbt+gZA4VvZKj5CfgsGj0SOUk=
+			LNu7xoR3RzinryPmQ3aLO1vTjwtwZBxfYP1doBmeOUo=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eF7J2A/CRw0hdnIyKTB7IvTLDUAW3sRiMU4hbgzqrMs=
+			PH35HIjRRoKS2omu2IMnrJdcLWwmLqrOmb/zTXA9rQ0=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9z6BL5kXG5CEGyyQX+t0oDSxBSA/VdomiL5dEA9IK2Q=
+			AEwqj8QNG1+RLKkOblafXAxAxoOJyYbjhatf9+wXYS8=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eF7J2A/CRw0hdnIyKTB7IvTLDUAW3sRiMU4hbgzqrMs=
+			PH35HIjRRoKS2omu2IMnrJdcLWwmLqrOmb/zTXA9rQ0=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZGc+ideKrSovzncE1k4cSf2yG0fBwc5AIJVEozRt0AU=
+			Fa5fzWSp6U25G7JAnuCHKVrUYKo/GCZ05Y8uw8qX8EQ=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BBP67UNZ0wmm6XUAz1lbt+gZA4VvZKj5CfgsGj0SOUk=
+			LNu7xoR3RzinryPmQ3aLO1vTjwtwZBxfYP1doBmeOUo=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sq2U9hPkFo4rN+wWRku8GqRK8CZ0Ge0XY6iVGPkEkOg=
+			AVd/QUm5vicWRqlf0Lgt6bpIz66qMpPkUbe2fW8RytM=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D4hX3nUFBmEaL/jRJ1mo66K+nRFCYAm4Wx/oLXhPu/E=
+			e5yQTt+3bcMHqmeGpqMq90VDcSU5VVJ48VnD0A4LiHk=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sq2U9hPkFo4rN+wWRku8GqRK8CZ0Ge0XY6iVGPkEkOg=
+			AVd/QUm5vicWRqlf0Lgt6bpIz66qMpPkUbe2fW8RytM=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tBwl8y1ahBXZqSYcEYelvevz8OAWomWoonzDP3xt900=
+			NP8U4y1B0LR0P+OEEyGCc4Y+CEKlQONim5XBcmBGoYA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

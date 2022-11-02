@@ -40,60 +40,6 @@
         "printedName": "BidstackMobileAds",
         "children": [
           {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BidstackMobileAds",
-                "printedName": "BidstackMobileAdsSDK.BidstackMobileAds",
-                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(cpy)shared",
-            "mangledName": "$s20BidstackMobileAdsSDK0abC0C6sharedACvpZ",
-            "moduleName": "BidstackMobileAdsSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BidstackMobileAds",
-                    "printedName": "BidstackMobileAdsSDK.BidstackMobileAds",
-                    "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(cm)shared",
-                "mangledName": "$s20BidstackMobileAdsSDK0abC0C6sharedACvgZ",
-                "moduleName": "BidstackMobileAdsSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "TypeDecl",
             "name": "LogLevel",
             "printedName": "LogLevel",
@@ -423,7 +369,8 @@
             "moduleName": "BidstackMobileAdsSDK",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "enumRawTypeName": "Int",
             "conformances": [
@@ -466,65 +413,62 @@
             ]
           },
           {
-            "kind": "Function",
-            "name": "InitializeNetwork",
-            "printedName": "InitializeNetwork(fromAdapterName:appName:)",
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "BidstackMobileAds",
+                "printedName": "BidstackMobileAdsSDK.BidstackMobileAds",
+                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds"
               }
             ],
-            "declKind": "Func",
-            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(im)InitializeNetworkFromAdapterName:appName:",
-            "mangledName": "$s20BidstackMobileAdsSDK0abC0C17InitializeNetwork15fromAdapterName03appI0ySS_SStF",
+            "declKind": "Var",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(cpy)shared",
+            "mangledName": "$s20BidstackMobileAdsSDK0abC0C6sharedACvpZ",
             "moduleName": "BidstackMobileAdsSDK",
-            "objc_name": "InitializeNetworkFromAdapterName:appName:",
+            "static": true,
             "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "Destroy",
-            "printedName": "Destroy()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(im)Destroy",
-            "mangledName": "$s20BidstackMobileAdsSDK0abC0C7DestroyyyF",
-            "moduleName": "BidstackMobileAdsSDK",
-            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
-            "funcSelfKind": "NonMutating"
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BidstackMobileAds",
+                    "printedName": "BidstackMobileAdsSDK.BidstackMobileAds",
+                    "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(cm)shared",
+                "mangledName": "$s20BidstackMobileAdsSDK0abC0C6sharedACvgZ",
+                "moduleName": "BidstackMobileAdsSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           },
           {
-            "kind": "Function",
-            "name": "AdapterInterface",
-            "printedName": "AdapterInterface()",
+            "kind": "Var",
+            "name": "adapterInterface",
+            "printedName": "adapterInterface",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -541,20 +485,96 @@
                 "usr": "s:Sq"
               }
             ],
-            "declKind": "Func",
-            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(im)AdapterInterface",
-            "mangledName": "$s20BidstackMobileAdsSDK0abC0C16AdapterInterfaceAA0aeF0CSgyF",
+            "declKind": "Var",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(py)adapterInterface",
+            "mangledName": "$s20BidstackMobileAdsSDK0abC0C16adapterInterfaceAA0a7AdapterF0CSgvp",
             "moduleName": "BidstackMobileAdsSDK",
             "declAttributes": [
               "AccessControl",
               "ObjC"
             ],
-            "funcSelfKind": "NonMutating"
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BidstackAdapterInterface",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface",
+                        "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(im)adapterInterface",
+                "mangledName": "$s20BidstackMobileAdsSDK0abC0C16adapterInterfaceAA0a7AdapterF0CSgvg",
+                "moduleName": "BidstackMobileAdsSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "SDKVersion",
+            "printedName": "SDKVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(cpy)SDKVersion",
+            "mangledName": "$s20BidstackMobileAdsSDK0abC0C10SDKVersionSSvpZ",
+            "moduleName": "BidstackMobileAdsSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(cm)SDKVersion",
+                "mangledName": "$s20BidstackMobileAdsSDK0abC0C10SDKVersionSSvgZ",
+                "moduleName": "BidstackMobileAdsSDK",
+                "static": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Function",
-            "name": "InitLogger",
-            "printedName": "InitLogger(withAdapterName:applicationName:)",
+            "name": "initializeNetwork",
+            "printedName": "initializeNetwork(fromAdapterName:adapterVersion:apiKey:completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -572,24 +592,69 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(cm)InitLoggerWithAdapterName:applicationName:",
-            "mangledName": "$s20BidstackMobileAdsSDK0abC0C10InitLogger15withAdapterName011applicationI0ySS_SStFZ",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(im)initializeNetworkFromAdapterName:adapterVersion:apiKey:completionHandler:",
+            "mangledName": "$s20BidstackMobileAdsSDK0abC0C17initializeNetwork15fromAdapterName14adapterVersion6apiKey17completionHandlerySS_S2SySb_SSSgtctF",
             "moduleName": "BidstackMobileAdsSDK",
-            "static": true,
-            "objc_name": "InitLoggerWithAdapterName:applicationName:",
+            "objc_name": "initializeNetworkFromAdapterName:adapterVersion:apiKey:completionHandler:",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "EnableFullVerboseMode",
-            "printedName": "EnableFullVerboseMode()",
+            "name": "debugSetVerboseMode",
+            "printedName": "debugSetVerboseMode()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -598,8 +663,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(cm)EnableFullVerboseMode",
-            "mangledName": "$s20BidstackMobileAdsSDK0abC0C21EnableFullVerboseModeyyFZ",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(cm)debugSetVerboseMode",
+            "mangledName": "$s20BidstackMobileAdsSDK0abC0C19debugSetVerboseModeyyFZ",
             "moduleName": "BidstackMobileAdsSDK",
             "static": true,
             "declAttributes": [
@@ -610,8 +675,8 @@
           },
           {
             "kind": "Function",
-            "name": "Log",
-            "printedName": "Log(_:logMessage:attributes:)",
+            "name": "log",
+            "printedName": "log(_:logMessage:attributes:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -667,8 +732,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(cm)Log:logMessage:attributes:",
-            "mangledName": "$s20BidstackMobileAdsSDK0abC0C3Log_10logMessage10attributesyAC0E5LevelO_ypSgSDySSyXlGSgtFZ",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(cm)log:logMessage:attributes:",
+            "mangledName": "$s20BidstackMobileAdsSDK0abC0C3log_0E7Message10attributesyAC8LogLevelO_ypSgSDySSyXlGSgtFZ",
             "moduleName": "BidstackMobileAdsSDK",
             "static": true,
             "declAttributes": [
@@ -1811,6 +1876,375 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BidstackMobileAdsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BidstackAdapterAdInstance",
+        "printedName": "BidstackAdapterAdInstance",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "adapterDelegate",
+            "printedName": "adapterDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BidstackMobileAdsSDK.BidstackAdapterDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BidstackAdapterDelegate",
+                    "printedName": "BidstackMobileAdsSDK.BidstackAdapterDelegate",
+                    "usr": "c:@M@BidstackMobileAdsSDK@objc(pl)BidstackAdapterDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(py)adapterDelegate",
+            "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC15adapterDelegateAA0aeI0_pSgvp",
+            "moduleName": "BidstackMobileAdsSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BidstackMobileAdsSDK.BidstackAdapterDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BidstackAdapterDelegate",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterDelegate",
+                        "usr": "c:@M@BidstackMobileAdsSDK@objc(pl)BidstackAdapterDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(im)adapterDelegate",
+                "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC15adapterDelegateAA0aeI0_pSgvg",
+                "moduleName": "BidstackMobileAdsSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BidstackMobileAdsSDK.BidstackAdapterDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BidstackAdapterDelegate",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterDelegate",
+                        "usr": "c:@M@BidstackMobileAdsSDK@objc(pl)BidstackAdapterDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(im)setAdapterDelegate:",
+                "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC15adapterDelegateAA0aeI0_pSgvs",
+                "moduleName": "BidstackMobileAdsSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BidstackMobileAdsSDK0A17AdapterAdInstanceC15adapterDelegateAA0aeI0_pSgvM",
+                "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC15adapterDelegateAA0aeI0_pSgvM",
+                "moduleName": "BidstackMobileAdsSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BidstackAdapterAdInstance",
+                "printedName": "BidstackMobileAdsSDK.BidstackAdapterAdInstance",
+                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(im)init",
+            "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceCACycfc",
+            "moduleName": "BidstackMobileAdsSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(apiKey:adUnitId:isRewardedVideo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(im)loadAdWithApiKey:adUnitId:isRewardedVideo:",
+            "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC04loadF06apiKey8adUnitId15isRewardedVideoySS_SSSbtF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "objc_name": "loadAdWithApiKey:adUnitId:isRewardedVideo:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(fromViewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(im)showAdFromViewController:",
+            "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC04showF018fromViewControllerySo06UIViewK0CSg_tF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "objc_name": "showAdFromViewController:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isAdAvailable",
+            "printedName": "isAdAvailable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(im)isAdAvailable",
+            "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC02isF9AvailableSbyF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCustom",
+            "printedName": "setCustom(VASTUrl:VASTPlayerUrl:playFromViewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20BidstackMobileAdsSDK0A17AdapterAdInstanceC9setCustom7VASTUrl13VASTPlayerUrl22playFromViewControllerySS_SSSo06UIViewP0CtF",
+            "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC9setCustom7VASTUrl13VASTPlayerUrl22playFromViewControllerySS_SSSo06UIViewP0CtF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance",
+        "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC",
+        "moduleName": "BidstackMobileAdsSDK",
+        "objc_name": "BidstackAdapterAdInstance",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2194,110 +2628,377 @@
         "printedName": "BidstackAdapterInterface",
         "children": [
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
+            "kind": "TypeDecl",
+            "name": "ShowResponseCodes",
+            "printedName": "ShowResponseCodes",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "BidstackAdapterInterface",
-                "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface",
-                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)init",
-            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceCACycfc",
-            "moduleName": "BidstackMobileAdsSDK",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "initialize",
-            "printedName": "initialize(apiKey:adapterName:adapterVersion:completionBlock:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, Swift.String?) -> ()",
+                "kind": "Var",
+                "name": "didOpen",
+                "printedName": "didOpen",
                 "children": [
                   {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, Swift.String?)",
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes.Type) -> BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
+                        "name": "ShowResponseCodes",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                        "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO"
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
+                        "name": "Metatype",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
+                            "name": "ShowResponseCodes",
+                            "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                            "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO"
                           }
-                        ],
-                        "usr": "s:Sq"
+                        ]
                       }
                     ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO7didOpenyA2EmF",
+                "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO7didOpenyA2EmF",
+                "moduleName": "BidstackMobileAdsSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 0
+              },
+              {
+                "kind": "Var",
+                "name": "didClose",
+                "printedName": "didClose",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes.Type) -> BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ShowResponseCodes",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                        "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ShowResponseCodes",
+                            "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                            "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO8didCloseyA2EmF",
+                "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO8didCloseyA2EmF",
+                "moduleName": "BidstackMobileAdsSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 1
+              },
+              {
+                "kind": "Var",
+                "name": "didShowSuccess",
+                "printedName": "didShowSuccess",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes.Type) -> BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ShowResponseCodes",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                        "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ShowResponseCodes",
+                            "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                            "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO03didG7SuccessyA2EmF",
+                "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO03didG7SuccessyA2EmF",
+                "moduleName": "BidstackMobileAdsSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 2
+              },
+              {
+                "kind": "Var",
+                "name": "didRewarded",
+                "printedName": "didRewarded",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes.Type) -> BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ShowResponseCodes",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                        "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ShowResponseCodes",
+                            "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                            "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO11didRewardedyA2EmF",
+                "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO11didRewardedyA2EmF",
+                "moduleName": "BidstackMobileAdsSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 3
+              },
+              {
+                "kind": "Var",
+                "name": "didClick",
+                "printedName": "didClick",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes.Type) -> BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ShowResponseCodes",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                        "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ShowResponseCodes",
+                            "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                            "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO8didClickyA2EmF",
+                "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO8didClickyA2EmF",
+                "moduleName": "BidstackMobileAdsSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 4
+              },
+              {
+                "kind": "Var",
+                "name": "didFailedToShow",
+                "printedName": "didFailedToShow",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes.Type) -> BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ShowResponseCodes",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                        "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ShowResponseCodes",
+                            "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                            "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO011didFailedToG0yA2EmF",
+                "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO011didFailedToG0yA2EmF",
+                "moduleName": "BidstackMobileAdsSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 5
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ShowResponseCodes",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes",
+                        "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO8rawValueAESgSi_tcfc",
+                "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO8rawValueAESgSi_tcfc",
+                "moduleName": "BidstackMobileAdsSDK",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO8rawValueSivp",
+                "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO8rawValueSivp",
+                "moduleName": "BidstackMobileAdsSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO8rawValueSivg",
+                    "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO8rawValueSivg",
+                    "moduleName": "BidstackMobileAdsSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
                   }
                 ]
               }
             ],
-            "declKind": "Func",
-            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)initializeWithApiKey:adapterName:adapterVersion:completionBlock:",
-            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC10initialize6apiKey11adapterName0J7Version15completionBlockySS_S2SySb_SSSgtctF",
+            "declKind": "Enum",
+            "usr": "s:20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO",
+            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC17ShowResponseCodesO",
             "moduleName": "BidstackMobileAdsSDK",
-            "objc_name": "initializeWithApiKey:adapterName:adapterVersion:completionBlock:",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
-            "funcSelfKind": "NonMutating"
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
           },
           {
             "kind": "Function",
@@ -2317,30 +3018,445 @@
             "moduleName": "BidstackMobileAdsSDK",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(apiKey:adUnitId:isRewardedVideo:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)loadAdWithApiKey:adUnitId:isRewardedVideo:completionHandler:",
+            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC6loadAd6apiKey8adUnitId15isRewardedVideo17completionHandlerySS_SSSbySbctF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "objc_name": "loadAdWithApiKey:adUnitId:isRewardedVideo:completionHandler:",
+            "declAttributes": [
+              "AccessControl",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "createAdapterInstance",
-            "printedName": "createAdapterInstance()",
+            "name": "showAd",
+            "printedName": "showAd(fromViewController:completionHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "BidstackAdapterAdInstance",
-                "printedName": "BidstackMobileAdsSDK.BidstackAdapterAdInstance",
-                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance"
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Int) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)createAdapterInstance",
-            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC06createE8InstanceAA0ae2AdH0CyF",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)showAdFromViewController:completionHandler:",
+            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC6showAd18fromViewController17completionHandlerySo06UIViewK0CSg_ySictF",
             "moduleName": "BidstackMobileAdsSDK",
+            "objc_name": "showAdFromViewController:completionHandler:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
             ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidLoad",
+            "printedName": "adDidLoad(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)adDidLoad:",
+            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC9adDidLoadyySSSgF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "objc_name": "adDidLoad:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidFailToLoad",
+            "printedName": "adDidFailToLoad(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)adDidFailToLoad:error:",
+            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC15adDidFailToLoad_5errorySSSg_SStF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "objc_name": "adDidFailToLoad:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidOpen",
+            "printedName": "adDidOpen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)adDidOpen:",
+            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC9adDidOpenyySSSgF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "objc_name": "adDidOpen:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidClose",
+            "printedName": "adDidClose(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)adDidClose:",
+            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC10adDidCloseyySSSgF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "objc_name": "adDidClose:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidShowSucceed",
+            "printedName": "adDidShowSucceed(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)adDidShowSucceed:",
+            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC16adDidShowSucceedyySSSgF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "objc_name": "adDidShowSucceed:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidClick",
+            "printedName": "adDidClick(_:clickUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)adDidClick:clickUrl:",
+            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC10adDidClick_8clickUrlySSSg_SStF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "objc_name": "adDidClick:clickUrl:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidReward",
+            "printedName": "adDidReward(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)adDidReward:",
+            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC11adDidRewardyySSSgF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "objc_name": "adDidReward:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidFailToShow",
+            "printedName": "adDidFailToShow(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)adDidFailToShow:error:",
+            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC15adDidFailToShow_5errorySSSg_SStF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "objc_name": "adDidFailToShow:error:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -2354,6 +3470,7 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -2361,355 +3478,11 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
+            "name": "BidstackAdapterDelegate",
+            "printedName": "BidstackAdapterDelegate",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(pl)BidstackAdapterDelegate",
+            "mangledName": "$s20BidstackMobileAdsSDK0A15AdapterDelegateP"
           },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "BidstackAdapterAdInstance",
-        "printedName": "BidstackAdapterAdInstance",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "adapterDelegate",
-            "printedName": "adapterDelegate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BidstackMobileAdsSDK.BidstackAdapterDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BidstackAdapterDelegate",
-                    "printedName": "BidstackMobileAdsSDK.BidstackAdapterDelegate",
-                    "usr": "c:@M@BidstackMobileAdsSDK@objc(pl)BidstackAdapterDelegate"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(py)adapterDelegate",
-            "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC15adapterDelegateAA0aeI0_pSgvp",
-            "moduleName": "BidstackMobileAdsSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "BidstackMobileAdsSDK.BidstackAdapterDelegate?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BidstackAdapterDelegate",
-                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterDelegate",
-                        "usr": "c:@M@BidstackMobileAdsSDK@objc(pl)BidstackAdapterDelegate"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(im)adapterDelegate",
-                "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC15adapterDelegateAA0aeI0_pSgvg",
-                "moduleName": "BidstackMobileAdsSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "BidstackMobileAdsSDK.BidstackAdapterDelegate?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BidstackAdapterDelegate",
-                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterDelegate",
-                        "usr": "c:@M@BidstackMobileAdsSDK@objc(pl)BidstackAdapterDelegate"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(im)setAdapterDelegate:",
-                "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC15adapterDelegateAA0aeI0_pSgvs",
-                "moduleName": "BidstackMobileAdsSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20BidstackMobileAdsSDK0A17AdapterAdInstanceC15adapterDelegateAA0aeI0_pSgvM",
-                "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC15adapterDelegateAA0aeI0_pSgvM",
-                "moduleName": "BidstackMobileAdsSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BidstackAdapterAdInstance",
-                "printedName": "BidstackMobileAdsSDK.BidstackAdapterAdInstance",
-                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(im)init",
-            "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceCACycfc",
-            "moduleName": "BidstackMobileAdsSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "loadAd",
-            "printedName": "loadAd(apiKey:adUnitId:isRewardedVideo:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(im)loadAdWithApiKey:adUnitId:isRewardedVideo:",
-            "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC04loadF06apiKey8adUnitId15isRewardedVideoySS_SSSbtF",
-            "moduleName": "BidstackMobileAdsSDK",
-            "objc_name": "loadAdWithApiKey:adUnitId:isRewardedVideo:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "showAd",
-            "printedName": "showAd(fromViewController:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(im)showAdFromViewController:",
-            "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC04showF018fromViewControllerySo06UIViewK0C_tF",
-            "moduleName": "BidstackMobileAdsSDK",
-            "objc_name": "showAdFromViewController:",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isAdAvailable",
-            "printedName": "isAdAvailable()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance(im)isAdAvailable",
-            "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC02isF9AvailableSbyF",
-            "moduleName": "BidstackMobileAdsSDK",
-            "declAttributes": [
-              "Dynamic",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setCustom",
-            "printedName": "setCustom(VASTUrl:VASTPlayerUrl:playFromViewController:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20BidstackMobileAdsSDK0A17AdapterAdInstanceC9setCustom7VASTUrl13VASTPlayerUrl22playFromViewControllerySS_SSSo06UIViewP0CtF",
-            "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC9setCustom7VASTUrl13VASTPlayerUrl22playFromViewControllerySS_SSSo06UIViewP0CtF",
-            "moduleName": "BidstackMobileAdsSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance",
-        "mangledName": "$s20BidstackMobileAdsSDK0A17AdapterAdInstanceC",
-        "moduleName": "BidstackMobileAdsSDK",
-        "objc_name": "BidstackAdapterAdInstance",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2789,6 +3562,13 @@
         "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "BidstackMobileAdsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "MediaPlayer",
+        "printedName": "MediaPlayer",
         "declKind": "Import",
         "moduleName": "BidstackMobileAdsSDK"
       },
@@ -2917,877 +3697,989 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 588,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 609,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 627,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 655,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 588,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 609,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 627,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 655,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 588,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 609,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 627,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 655,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 757,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 775,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 795,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 816,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 835,
       "length": 9,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 757,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 775,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 795,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 816,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 835,
       "length": 9,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 757,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 775,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 795,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 816,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 835,
       "length": 9,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 977,
       "length": 27,
       "value": "\"bidstack-logger-store-key\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1044,
       "length": 37,
       "value": "\"pub9dd44669496cf7deb39df5a8c72e586c\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1236,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1276,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1313,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1354,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "Array",
       "offset": 1413,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 1453,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1591,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1617,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
-      "kind": "IntegerLiteral",
-      "offset": 365,
-      "length": 4,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
-      "kind": "IntegerLiteral",
-      "offset": 383,
-      "length": 6,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
-      "kind": "IntegerLiteral",
-      "offset": 403,
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "StringLiteral",
+      "offset": 176,
       "length": 7,
-      "value": "3"
+      "value": "\"1.8.2\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
-      "kind": "IntegerLiteral",
-      "offset": 424,
-      "length": 5,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
-      "kind": "IntegerLiteral",
-      "offset": 443,
-      "length": 8,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
-      "kind": "IntegerLiteral",
-      "offset": 365,
-      "length": 4,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
-      "kind": "IntegerLiteral",
-      "offset": 383,
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "StringLiteral",
+      "offset": 226,
       "length": 6,
-      "value": "2"
+      "value": "\"BMAS\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
-      "kind": "IntegerLiteral",
-      "offset": 403,
-      "length": 7,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
-      "kind": "IntegerLiteral",
-      "offset": 424,
-      "length": 5,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
-      "kind": "IntegerLiteral",
-      "offset": 443,
-      "length": 8,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "BooleanLiteral",
-      "offset": 704,
+      "offset": 357,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "BooleanLiteral",
+      "offset": 402,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "StringLiteral",
+      "offset": 451,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "StringLiteral",
+      "offset": 495,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "StringLiteral",
+      "offset": 532,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 735,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "IntegerLiteral",
       "offset": 753,
-      "length": 2,
-      "value": "\"\""
+      "length": 6,
+      "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
-      "kind": "StringLiteral",
-      "offset": 790,
-      "length": 2,
-      "value": "\"\""
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 773,
+      "length": 7,
+      "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 794,
+      "length": 5,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 813,
+      "length": 8,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 735,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 753,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 773,
+      "length": 7,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 794,
+      "length": 5,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 813,
+      "length": 8,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 884,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 906,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 937,
       "length": 14,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 995,
       "length": 16,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1025,
       "length": 15,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1054,
       "length": 18,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1086,
       "length": 17,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1117,
       "length": 17,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1148,
       "length": 20,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 884,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 906,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 937,
       "length": 14,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 995,
       "length": 16,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1025,
       "length": 15,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1054,
       "length": 18,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1086,
       "length": 17,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1117,
       "length": 17,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1148,
       "length": 20,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 884,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 906,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 937,
       "length": 14,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 995,
       "length": 16,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1025,
       "length": 15,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1054,
       "length": 18,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1086,
       "length": 17,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1117,
       "length": 17,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1148,
       "length": 20,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
       "kind": "StringLiteral",
       "offset": 715,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
       "kind": "StringLiteral",
       "offset": 759,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
       "kind": "BooleanLiteral",
       "offset": 807,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 869,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
       "kind": "BooleanLiteral",
       "offset": 1779,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
       "kind": "BooleanLiteral",
       "offset": 5296,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
       "kind": "StringLiteral",
       "offset": 1361,
       "length": 4,
       "value": "\"\r\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
       "kind": "StringLiteral",
       "offset": 1408,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
       "kind": "StringLiteral",
       "offset": 1997,
       "length": 4,
       "value": "\"\r\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
       "kind": "StringLiteral",
       "offset": 2024,
       "length": 71,
       "value": "\"Signal \""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
       "kind": "StringLiteral",
       "offset": 2068,
       "length": 1,
       "value": "\" (\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
       "kind": "StringLiteral",
       "offset": 2079,
       "length": 1,
       "value": "\") was raised.\n\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
       "kind": "StringLiteral",
       "offset": 341,
       "length": 5,
       "value": "\"en0\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
       "kind": "StringLiteral",
       "offset": 371,
       "length": 9,
       "value": "\"pdp_ip0\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
       "kind": "StringLiteral",
       "offset": 341,
       "length": 5,
       "value": "\"en0\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
       "kind": "StringLiteral",
       "offset": 371,
       "length": 9,
       "value": "\"pdp_ip0\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
-      "kind": "StringLiteral",
-      "offset": 889,
-      "length": 19,
-      "value": "\"LoggerOnlineLevel\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
-      "kind": "StringLiteral",
-      "offset": 966,
-      "length": 13,
-      "value": "\"LoadTimeout\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
-      "kind": "StringLiteral",
-      "offset": 1037,
-      "length": 13,
-      "value": "\"ReadTimeout\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1267,
-      "length": 5,
-      "value": "15000"
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1310,
-      "length": 5,
-      "value": "15000"
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
       "kind": "BooleanLiteral",
-      "offset": 4134,
+      "offset": 378,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
       "kind": "BooleanLiteral",
-      "offset": 4229,
+      "offset": 473,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
       "kind": "BooleanLiteral",
-      "offset": 4284,
+      "offset": 528,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
       "kind": "StringLiteral",
-      "offset": 3929,
+      "offset": 173,
       "length": 25,
       "value": "\"BidstackMobileAdsSDK.BidstackAdapterAdInstance\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
       "kind": "StringLiteral",
-      "offset": 8461,
+      "offset": 3569,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1057,
-      "length": 14,
-      "value": "\"ad-did-start\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1117,
-      "length": 13,
-      "value": "\"ad-did-stop\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1176,
-      "length": 13,
-      "value": "\"ad-did-load\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1238,
-      "length": 15,
-      "value": "\"ad-impression\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1304,
-      "length": 22,
-      "value": "\"ad-did-click-through\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1375,
-      "length": 15,
-      "value": "\"ad-user-close\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1443,
-      "length": 21,
-      "value": "\"video-did-completed\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1518,
-      "length": 19,
-      "value": "\"ad-did-load-error\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1591,
-      "length": 15,
-      "value": "\"ad-play-error\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1650,
-      "length": 10,
-      "value": "\"ad-error\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1705,
-      "length": 63,
-      "value": "\"https:\/\/cdn.bidstack.com\/video-player\/BidstackVASTPlayer.html\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1820,
-      "length": 44,
-      "value": "\"var meta = document.createElement('meta');\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1871,
-      "length": 25,
-      "value": "\"meta.name = 'viewport';\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 1903,
-      "length": 94,
-      "value": "\"meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 2004,
-      "length": 54,
-      "value": "\"var head = document.getElementsByTagName('head')[0];\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 2065,
-      "length": 25,
-      "value": "\"head.appendChild(meta);\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "StringLiteral",
-      "offset": 2130,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2173,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2484,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
-      "offset": 2644,
+      "offset": 1029,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1044,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1066,
+      "length": 14,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1094,
+      "length": 11,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1119,
+      "length": 8,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1141,
+      "length": 15,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1029,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1044,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1066,
+      "length": 14,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1094,
+      "length": 11,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1119,
+      "length": 8,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1141,
+      "length": 15,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "StringLiteral",
-      "offset": 2697,
+      "offset": 1231,
+      "length": 19,
+      "value": "\"LoggerOnlineLevel\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "StringLiteral",
+      "offset": 1308,
+      "length": 13,
+      "value": "\"LoadTimeout\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "StringLiteral",
+      "offset": 1379,
+      "length": 13,
+      "value": "\"ReadTimeout\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1609,
+      "length": 5,
+      "value": "15000"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1652,
+      "length": 5,
+      "value": "15000"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1076,
+      "length": 14,
+      "value": "\"ad-did-start\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1136,
+      "length": 13,
+      "value": "\"ad-did-stop\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1195,
+      "length": 13,
+      "value": "\"ad-did-load\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1257,
+      "length": 15,
+      "value": "\"ad-impression\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1323,
+      "length": 22,
+      "value": "\"ad-did-click-through\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1394,
+      "length": 15,
+      "value": "\"ad-user-close\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1462,
+      "length": 21,
+      "value": "\"video-did-completed\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1537,
+      "length": 19,
+      "value": "\"ad-did-load-error\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1610,
+      "length": 15,
+      "value": "\"ad-play-error\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1669,
+      "length": 10,
+      "value": "\"ad-error\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1724,
+      "length": 63,
+      "value": "\"https:\/\/cdn.bidstack.com\/video-player\/BidstackVASTPlayer.html\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1839,
+      "length": 44,
+      "value": "\"var meta = document.createElement('meta');\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1890,
+      "length": 25,
+      "value": "\"meta.name = 'viewport';\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 1922,
+      "length": 94,
+      "value": "\"meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 2023,
+      "length": 54,
+      "value": "\"var head = document.getElementsByTagName('head')[0];\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 2084,
+      "length": 25,
+      "value": "\"head.appendChild(meta);\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 2149,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2745,
+      "offset": 2192,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2503,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2663,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "StringLiteral",
+      "offset": 2716,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2764,
       "length": 5,
       "value": "false"
     }
