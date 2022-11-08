@@ -653,6 +653,27 @@
           },
           {
             "kind": "Function",
+            "name": "resetNetwork",
+            "printedName": "resetNetwork()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackMobileAds(im)resetNetwork",
+            "mangledName": "$s20BidstackMobileAdsSDK0abC0C12resetNetworkyyF",
+            "moduleName": "BidstackMobileAdsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "debugSetVerboseMode",
             "printedName": "debugSetVerboseMode()",
             "children": [
@@ -3001,6 +3022,66 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "currentAdInstance",
+            "printedName": "currentAdInstance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BidstackMobileAdsSDK.BidstackAdapterAdInstance?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BidstackAdapterAdInstance",
+                    "printedName": "BidstackMobileAdsSDK.BidstackAdapterAdInstance",
+                    "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(py)currentAdInstance",
+            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC17currentAdInstanceAA0aehI0CSgvp",
+            "moduleName": "BidstackMobileAdsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BidstackMobileAdsSDK.BidstackAdapterAdInstance?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BidstackAdapterAdInstance",
+                        "printedName": "BidstackMobileAdsSDK.BidstackAdapterAdInstance",
+                        "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterAdInstance"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)currentAdInstance",
+                "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC17currentAdInstanceAA0aehI0CSgvg",
+                "moduleName": "BidstackMobileAdsSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "networkVersion",
             "printedName": "networkVersion()",
@@ -3129,6 +3210,28 @@
             "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC6showAd18fromViewController17completionHandlerySo06UIViewK0CSg_ySictF",
             "moduleName": "BidstackMobileAdsSDK",
             "objc_name": "showAdFromViewController:completionHandler:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isAdAvailable",
+            "printedName": "isAdAvailable()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BidstackMobileAdsSDK@objc(cs)BidstackAdapterInterface(im)isAdAvailable",
+            "mangledName": "$s20BidstackMobileAdsSDK0A16AdapterInterfaceC13isAdAvailableSbyF",
+            "moduleName": "BidstackMobileAdsSDK",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -3697,987 +3800,987 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 588,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 609,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 627,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 655,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 588,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 609,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 627,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 655,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 588,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 609,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 627,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 655,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 757,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 775,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 795,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 816,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 835,
       "length": 9,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 757,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 775,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 795,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 816,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 835,
       "length": 9,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 757,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 775,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 795,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 816,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 835,
       "length": 9,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 977,
       "length": 27,
       "value": "\"bidstack-logger-store-key\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1044,
       "length": 37,
       "value": "\"pub9dd44669496cf7deb39df5a8c72e586c\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1236,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1276,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1313,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1354,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "Array",
       "offset": 1413,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 1453,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1591,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackLogger.swift",
       "kind": "StringLiteral",
       "offset": 1617,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "StringLiteral",
       "offset": 176,
-      "length": 7,
-      "value": "\"1.8.2\""
+      "length": 9,
+      "value": "\"1.8.2.1\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "StringLiteral",
-      "offset": 226,
+      "offset": 228,
       "length": 6,
       "value": "\"BMAS\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "BooleanLiteral",
-      "offset": 357,
+      "offset": 359,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "BooleanLiteral",
-      "offset": 402,
+      "offset": 404,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "StringLiteral",
-      "offset": 451,
+      "offset": 453,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "StringLiteral",
-      "offset": 495,
+      "offset": 497,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "StringLiteral",
-      "offset": 532,
+      "offset": 534,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 735,
+      "offset": 737,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 753,
+      "offset": 755,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 773,
+      "offset": 775,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 794,
+      "offset": 796,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 813,
+      "offset": 815,
       "length": 8,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 735,
+      "offset": 737,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 753,
+      "offset": 755,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 773,
+      "offset": 775,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 794,
+      "offset": 796,
       "length": 5,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 813,
+      "offset": 815,
       "length": 8,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 884,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 906,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 937,
       "length": 14,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 995,
       "length": 16,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1025,
       "length": 15,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1054,
       "length": 18,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1086,
       "length": 17,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1117,
       "length": 17,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1148,
       "length": 20,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 884,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 906,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 937,
       "length": 14,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 995,
       "length": 16,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1025,
       "length": 15,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1054,
       "length": 18,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1086,
       "length": 17,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1117,
       "length": 17,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1148,
       "length": 20,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 884,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 906,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 937,
       "length": 14,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 995,
       "length": 16,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1025,
       "length": 15,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1054,
       "length": 18,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1086,
       "length": 17,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1117,
       "length": 17,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMockAPI\/BidstackMockAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 1148,
       "length": 20,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
       "kind": "StringLiteral",
       "offset": 715,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
       "kind": "StringLiteral",
       "offset": 759,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
       "kind": "BooleanLiteral",
       "offset": 807,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 869,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
       "kind": "BooleanLiteral",
       "offset": 1779,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAPI.swift",
       "kind": "BooleanLiteral",
       "offset": 5296,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
       "kind": "StringLiteral",
       "offset": 1361,
       "length": 4,
       "value": "\"\r\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
       "kind": "StringLiteral",
       "offset": 1408,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
       "kind": "StringLiteral",
       "offset": 1997,
       "length": 4,
       "value": "\"\r\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
       "kind": "StringLiteral",
       "offset": 2024,
       "length": 71,
       "value": "\"Signal \""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
       "kind": "StringLiteral",
       "offset": 2068,
       "length": 1,
       "value": "\" (\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackCrashDetection.swift",
       "kind": "StringLiteral",
       "offset": 2079,
       "length": 1,
       "value": "\") was raised.\n\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
       "kind": "StringLiteral",
       "offset": 341,
       "length": 5,
       "value": "\"en0\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
       "kind": "StringLiteral",
       "offset": 371,
       "length": 9,
       "value": "\"pdp_ip0\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
       "kind": "StringLiteral",
       "offset": 341,
       "length": 5,
       "value": "\"en0\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackHelper.swift",
       "kind": "StringLiteral",
       "offset": 371,
       "length": 9,
       "value": "\"pdp_ip0\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
       "kind": "BooleanLiteral",
       "offset": 378,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
       "kind": "BooleanLiteral",
       "offset": 473,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
       "kind": "BooleanLiteral",
       "offset": 528,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
       "kind": "StringLiteral",
       "offset": 173,
       "length": 25,
       "value": "\"BidstackMobileAdsSDK.BidstackAdapterAdInstance\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInstance.swift",
       "kind": "StringLiteral",
-      "offset": 3569,
+      "offset": 3627,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1029,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1044,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1066,
       "length": 14,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1094,
       "length": 11,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1119,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1141,
       "length": 15,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1029,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1044,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1066,
       "length": 14,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1094,
       "length": 11,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1119,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1141,
       "length": 15,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "StringLiteral",
       "offset": 1231,
       "length": 19,
       "value": "\"LoggerOnlineLevel\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "StringLiteral",
       "offset": 1308,
       "length": 13,
       "value": "\"LoadTimeout\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "StringLiteral",
       "offset": 1379,
       "length": 13,
       "value": "\"ReadTimeout\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1609,
       "length": 5,
       "value": "15000"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackAdapterInterface.swift",
       "kind": "IntegerLiteral",
       "offset": 1652,
       "length": 5,
       "value": "15000"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1076,
       "length": 14,
       "value": "\"ad-did-start\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1136,
       "length": 13,
       "value": "\"ad-did-stop\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1195,
       "length": 13,
       "value": "\"ad-did-load\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1257,
       "length": 15,
       "value": "\"ad-impression\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1323,
       "length": 22,
       "value": "\"ad-did-click-through\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1394,
       "length": 15,
       "value": "\"ad-user-close\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1462,
       "length": 21,
       "value": "\"video-did-completed\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1537,
       "length": 19,
       "value": "\"ad-did-load-error\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1610,
       "length": 15,
       "value": "\"ad-play-error\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1669,
       "length": 10,
       "value": "\"ad-error\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1724,
       "length": 63,
       "value": "\"https:\/\/cdn.bidstack.com\/video-player\/BidstackVASTPlayer.html\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1839,
       "length": 44,
       "value": "\"var meta = document.createElement('meta');\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1890,
       "length": 25,
       "value": "\"meta.name = 'viewport';\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 1922,
       "length": 94,
       "value": "\"meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 2023,
       "length": 54,
       "value": "\"var head = document.getElementsByTagName('head')[0];\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 2084,
       "length": 25,
       "value": "\"head.appendChild(meta);\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 2149,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "BooleanLiteral",
       "offset": 2192,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "BooleanLiteral",
       "offset": 2503,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "IntegerLiteral",
       "offset": 2663,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "StringLiteral",
       "offset": 2716,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/alexeyvolkovwork\/Work\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
+      "filePath": "\/Users\/alexeyvolkov\/MyProjects\/Bidstack\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackVideoAdPlayer.swift",
       "kind": "BooleanLiteral",
       "offset": 2764,
       "length": 5,
