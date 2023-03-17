@@ -18,8 +18,8 @@ Pod::Spec.new do |spec|
   
   spec.pod_target_xcconfig = { 
     'VALID_ARCHS[sdk=iphoneos*]' => 'arm64',
-    'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64'
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 armv7'
+    'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 armv7',
   }
                                    
   spec.source       = { :git => "https://github.com/bidstack-group/BidstackMobileAdsSDK-iOS.git", :tag => "v#{spec.version}" }
