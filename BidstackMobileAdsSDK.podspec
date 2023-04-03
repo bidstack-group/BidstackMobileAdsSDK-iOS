@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BidstackMobileAdsSDK"
-  spec.version      = "1.9.0"
+  spec.version      = "1.9.1"
   spec.summary      = "Bidstack Mobile Ads SDK."
 
   spec.description  = <<-DESC
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
 
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
 
-  spec.author       = { "Alexey Volkov" => "aleksejs.volkovs@bidstack.com" }
+  spec.author       = "Bidstack Limited"
   spec.platform     = :ios, "11.0"
   spec.swift_version = '5.0'
   
