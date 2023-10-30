@@ -1,11 +1,4 @@
 framework module BidstackMobileAdsSDK {
-  umbrella header "BidstackMobileAdsSDK.h"
-
-  export *
-  module * { export * }
-}
-
-module BidstackMobileAdsSDK.Swift {
-  header "BidstackMobileAdsSDK-Swift.h"
+  header "BidstackMobileAdsSDK.h"
   requires objc
 }

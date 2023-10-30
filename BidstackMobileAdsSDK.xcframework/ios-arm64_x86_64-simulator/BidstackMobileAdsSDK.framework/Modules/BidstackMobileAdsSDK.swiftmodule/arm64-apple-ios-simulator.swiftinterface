@@ -1,14 +1,14 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidstackMobileAdsSDK
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidstackMobileAdsSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFAudio
 import AVFoundation
 import AdSupport
-@_exported import BidstackMobileAdsSDK
 import CommonCrypto
+import CoreLocation
 import CoreTelephony
 import Foundation
-import MediaPlayer
 import SafariServices
 import Swift
 import SystemConfiguration
@@ -16,167 +16,77 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
+import os
 @_inheritsConvenienceInitializers @objc public class BidstackMobileAds : ObjectiveC.NSObject {
-  @objc public enum LogLevel : Swift.Int {
-    case debug
-    case info
-    case notice
-    case warning
-    case error
-    case critical
+  @objc public enum BidstackLogLevel : Swift.Int {
+    case debug, info, warning, error, critical
     public init?(rawValue: Swift.Int)
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
   }
-  @objc public static let shared: BidstackMobileAdsSDK.BidstackMobileAds
-  @objc public var adapterInterface: BidstackMobileAdsSDK.BidstackAdapterInterface? {
-    @objc get
+  @objc public enum BidstackInitializationStatus : Swift.Int {
+    case initializing
+    case initializationSucceeded
+    case initializationFailed
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
   }
-  @objc public class var SDKVersion: Swift.String {
-    @objc get
-  }
-  @objc public func initializeNetwork(fromAdapterName adapterName: Swift.String, adapterVersion: Swift.String, apiKey: Swift.String, completionHandler: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
-  @objc public func resetNetwork()
+  @objc public class func getVersion() -> Swift.String
+  @objc public class func initialize(fromAdapterName adapterName: Swift.String, adapterVersion: Swift.String, apiKey: Swift.String, completionHandler: @escaping (_ initializationStatus: BidstackMobileAdsSDK.BidstackMobileAds.BidstackInitializationStatus, _ error: Swift.String?) -> Swift.Void)
+  @objc public class func setHasConsent(_ hasConsent: Swift.Bool)
+  @objc public class func setIsChildDirected(_ isChildDirected: Swift.Bool)
+  @objc public class func log(_ logLevel: BidstackMobileAdsSDK.BidstackMobileAds.BidstackLogLevel, category: Swift.String? = nil, _ publicMsg: Swift.String, _ privateMsg: Swift.String = "")
   @objc deinit
-  @objc public class func debugSetVerboseMode()
-  @objc public class func log(_ logLevel: BidstackMobileAdsSDK.BidstackMobileAds.LogLevel, logMessage: Any?, attributes: [Swift.String : Swift.AnyObject]? = nil)
   @objc override dynamic public init()
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BidstackAPI : ObjectiveC.NSObject {
+@objc public protocol BidstackRewardedAdDelegate {
+  @objc optional func didRewardedOpen(adUnitId: Swift.String)
+  @objc optional func didRewardedClose(adUnitId: Swift.String)
+  @objc optional func didRewardedVideoStart(adUnitId: Swift.String)
+  @objc optional func didRewardedImpression(adUnitId: Swift.String)
+  @objc optional func didRewardedClick(adUnitId: Swift.String)
+  @objc optional func didRewardedShowFail(adUnitId: Swift.String, message: Swift.String?)
+  @objc optional func didRewardedLoad(adUnitId: Swift.String)
+  @objc optional func didRewardedLoadFail(adUnitId: Swift.String, message: Swift.String?)
+  @objc optional func didRewardedVideoComplete(adUnitId: Swift.String)
+  @objc optional func didUserReward(adUnitId: Swift.String)
+}
+@_hasMissingDesignatedInitializers @objc public class BidstackRewardedAd : BidstackMobileAdsSDK.BidstackAd {
+  @objc weak public var delegate: (any BidstackMobileAdsSDK.BidstackRewardedAdDelegate)?
+  @objc public init(adUnitId: Swift.String)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class BidstackHelper {
-  public enum BidstackNetworkType : Swift.String {
-    case wifi
-    case cellular
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public class var idfa: Swift.String {
-    get
-  }
-  public class var osVersion: Swift.String {
-    get
-  }
-  public class var osType: Swift.String {
-    get
-  }
-  public class var appVersion: Swift.String {
-    get
-  }
-  public class var bundleIdentifier: Swift.String {
-    get
-  }
-  public class var carrierName: Swift.String {
-    get
-  }
-  public class var deviceName: Swift.String {
-    get
-  }
-  public class var make: Swift.String {
-    get
-  }
-  public class var language: Swift.String {
-    get
-  }
-  public class var connectionType: Swift.String {
-    get
-  }
-  public class var screenWidth: Swift.Int {
-    get
-  }
-  public class var screenHeight: Swift.Int {
-    get
-  }
-  public class var ipAddressWifi: Swift.String {
-    get
-  }
-  public class var ipAddressCellular: Swift.String {
-    get
-  }
-  public class var userAgent: Swift.String {
-    get
-  }
-  public class func getAddress(for network: BidstackMobileAdsSDK.BidstackHelper.BidstackNetworkType) -> Swift.String?
+@_hasMissingDesignatedInitializers @objc public class BidstackAd : ObjectiveC.NSObject {
+  @objc public func loadAd()
+  @objc public func showAd(from viewController: UIKit.UIViewController?)
+  @objc public func isAvailable() -> Swift.Bool
   @objc deinit
 }
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public var deviceModelName: Swift.String {
-    get
-  }
+@objc public protocol BidstackInterstitialAdDelegate {
+  @objc optional func didInterstitialOpen(adUnitId: Swift.String)
+  @objc optional func didInterstitialClose(adUnitId: Swift.String)
+  @objc optional func didInterstitialVideoStart(adUnitId: Swift.String)
+  @objc optional func didInterstitialImpression(adUnitId: Swift.String)
+  @objc optional func didInterstitialClick(adUnitId: Swift.String)
+  @objc optional func didInterstitialShowFail(adUnitId: Swift.String, message: Swift.String?)
+  @objc optional func didInterstitialLoad(adUnitId: Swift.String)
+  @objc optional func didInterstitialLoadFail(adUnitId: Swift.String, message: Swift.String?)
+  @objc optional func didInterstitialVideoComplete(adUnitId: Swift.String)
 }
-@_hasMissingDesignatedInitializers @objc(BidstackAdapterAdInstance) public class BidstackAdapterAdInstance : ObjectiveC.NSObject {
-  @objc weak public var adapterDelegate: BidstackMobileAdsSDK.BidstackAdapterDelegate?
+@_hasMissingDesignatedInitializers @objc public class BidstackInterstitialAd : BidstackMobileAdsSDK.BidstackAd {
+  @objc weak public var delegate: (any BidstackMobileAdsSDK.BidstackInterstitialAdDelegate)?
+  @objc public init(adUnitId: Swift.String)
   @objc deinit
 }
-extension BidstackMobileAdsSDK.BidstackAdapterAdInstance {
-  @objc dynamic public func loadAd(apiKey: Swift.String, adUnitId: Swift.String, isRewardedVideo: Swift.Bool)
-  @objc dynamic public func showAd(fromViewController viewController: UIKit.UIViewController?)
-  @objc dynamic public func isAdAvailable() -> Swift.Bool
-  public func setCustom(VASTUrl url: Swift.String, VASTPlayerUrl playerUrl: Swift.String, playFromViewController playViewController: UIKit.UIViewController)
-}
-public typealias InstanceLoadAdDelegate = (Swift.Bool) -> Swift.Void
-public typealias InstanceShowAdDelegate = (Swift.Int) -> Swift.Void
-@objc(BidstackAdapterDelegate) public protocol BidstackAdapterDelegate {
-  @objc func adDidLoad(_ unitId: Swift.String?)
-  @objc func adDidOpen(_ unitId: Swift.String?)
-  @objc func adDidClose(_ unitId: Swift.String?)
-  @objc func adDidShowSucceed(_ unitId: Swift.String?)
-  @objc func adDidClick(_ unitId: Swift.String?, clickUrl: Swift.String)
-  @objc func adDidReward(_ unitId: Swift.String?)
-  @objc func adDidVideoStarted(_ unitId: Swift.String?)
-  @objc func adDidVideoCompleted(_ unitId: Swift.String?)
-  @objc func adDidFailToLoad(_ unitId: Swift.String?, error: Swift.String)
-  @objc func adDidFailToShow(_ unitId: Swift.String?, error: Swift.String)
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(BidstackAdapterInterface) public class BidstackAdapterInterface : ObjectiveC.NSObject {
-  @objc public enum ShowResponseCodes : Swift.Int {
-    case didOpen = 0
-    case didClose
-    case didShowSuccess
-    case didRewarded
-    case didClick
-    case didFailedToShow
-    case didVideoStarted
-    case didVideoCompleted
-    public init?(rawValue: Swift.Int)
-    public typealias RawValue = Swift.Int
-    public var rawValue: Swift.Int {
-      get
-    }
-  }
-  public var currentAdInstance: BidstackMobileAdsSDK.BidstackAdapterAdInstance? {
-    get
-  }
-  @objc public func networkVersion() -> Swift.String
-  @objc public func loadAd(apiKey: Swift.String, adUnitId: Swift.String, isRewardedVideo: Swift.Bool, completionHandler: @escaping BidstackMobileAdsSDK.InstanceLoadAdDelegate)
-  @objc public func showAd(fromViewController viewController: UIKit.UIViewController?, completionHandler: @escaping BidstackMobileAdsSDK.InstanceShowAdDelegate)
-  @objc public func isAdAvailable() -> Swift.Bool
-  @objc deinit
-}
-extension BidstackMobileAdsSDK.BidstackAdapterInterface : BidstackMobileAdsSDK.BidstackAdapterDelegate {
-  @objc dynamic public func adDidLoad(_ unitId: Swift.String?)
-  @objc dynamic public func adDidFailToLoad(_ unitId: Swift.String?, error: Swift.String)
-  @objc dynamic public func adDidOpen(_ unitId: Swift.String?)
-  @objc dynamic public func adDidClose(_ unitId: Swift.String?)
-  @objc dynamic public func adDidShowSucceed(_ unitId: Swift.String?)
-  @objc dynamic public func adDidClick(_ unitId: Swift.String?, clickUrl: Swift.String)
-  @objc dynamic public func adDidReward(_ unitId: Swift.String?)
-  @objc dynamic public func adDidFailToShow(_ unitId: Swift.String?, error: Swift.String)
-  @objc dynamic public func adDidVideoStarted(_ unitId: Swift.String?)
-  @objc dynamic public func adDidVideoCompleted(_ unitId: Swift.String?)
-}
-extension BidstackMobileAdsSDK.BidstackMobileAds.LogLevel : Swift.Equatable {}
-extension BidstackMobileAdsSDK.BidstackMobileAds.LogLevel : Swift.Hashable {}
-extension BidstackMobileAdsSDK.BidstackMobileAds.LogLevel : Swift.RawRepresentable {}
-extension BidstackMobileAdsSDK.BidstackHelper.BidstackNetworkType : Swift.Equatable {}
-extension BidstackMobileAdsSDK.BidstackHelper.BidstackNetworkType : Swift.Hashable {}
-extension BidstackMobileAdsSDK.BidstackHelper.BidstackNetworkType : Swift.RawRepresentable {}
-extension BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes : Swift.Equatable {}
-extension BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes : Swift.Hashable {}
-extension BidstackMobileAdsSDK.BidstackAdapterInterface.ShowResponseCodes : Swift.RawRepresentable {}
+extension BidstackMobileAdsSDK.BidstackMobileAds.BidstackLogLevel : Swift.Equatable {}
+extension BidstackMobileAdsSDK.BidstackMobileAds.BidstackLogLevel : Swift.Hashable {}
+extension BidstackMobileAdsSDK.BidstackMobileAds.BidstackLogLevel : Swift.RawRepresentable {}
+extension BidstackMobileAdsSDK.BidstackMobileAds.BidstackInitializationStatus : Swift.Equatable {}
+extension BidstackMobileAdsSDK.BidstackMobileAds.BidstackInitializationStatus : Swift.Hashable {}
+extension BidstackMobileAdsSDK.BidstackMobileAds.BidstackInitializationStatus : Swift.RawRepresentable {}
