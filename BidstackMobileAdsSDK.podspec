@@ -1,11 +1,11 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BidstackMobileAdsSDK"
-  spec.version      = "2.2.0"
-  spec.summary      = "Bidstack Mobile Ads SDK."
+  spec.version      = "2.3.0"
+  spec.summary      = "Bidstack Mobile Ads SDK"
 
   spec.description  = <<-DESC
-			  The Bidstack Mobile Ads SDK is a VAST player 2.0 with networking layer that allows to play back video advertising for Bidstack custom adapter.
+  The Bidstack Mobile Ads SDK allows to play back video advertising for Bidstack custom adapters.
 		      DESC
 
   spec.homepage     = "https://bidstack.com"
