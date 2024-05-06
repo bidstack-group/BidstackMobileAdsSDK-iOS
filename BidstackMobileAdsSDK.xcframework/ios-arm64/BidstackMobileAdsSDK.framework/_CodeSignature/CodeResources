@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PI3nXTh94Pv2m5uM4MNIkhp2iZk=
+		BxwGQOupZ6f9armbiF3hYZL/VmU=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		+sZwf2vnCxhMeEVIrom0Ezs78zs=
+		i6oRo1/HtkCrLWUGtbBHU+Ej8G4=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		WcYZ76bWntdFEwllF18sGoqw5EA=
+		/V4qyXmnCAEK9x8KP4xoCpMam1I=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		WcYZ76bWntdFEwllF18sGoqw5EA=
+		/V4qyXmnCAEK9x8KP4xoCpMam1I=
 		</data>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		eHoFmHk8htchj1FX5XMWnOIw4Bo=
+		d+zsXI0rc8gYSwmwmnIYZ8EO7y8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,22 +54,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+sZwf2vnCxhMeEVIrom0Ezs78zs=
+			i6oRo1/HtkCrLWUGtbBHU+Ej8G4=
 			</data>
 			<key>hash2</key>
 			<data>
-			gw52lT2NNS2NwEqAKXmWuCgJ45S8/Bf3e9lgZY7k6Wg=
+			P8LKMuJM9aPCxGtJQASr+zx1d3DAz9ctqleQ/C/iCVw=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WcYZ76bWntdFEwllF18sGoqw5EA=
+			/V4qyXmnCAEK9x8KP4xoCpMam1I=
 			</data>
 			<key>hash2</key>
 			<data>
-			MAIwYNbxl85tyLkKFCLT1VqnvNuB90JJJo1+lRb4EnY=
+			MNCa6B6SmjPlE3rRjS1oA/bTORt1RsRQ4AkvHXrbSQM=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -87,22 +87,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WcYZ76bWntdFEwllF18sGoqw5EA=
+			/V4qyXmnCAEK9x8KP4xoCpMam1I=
 			</data>
 			<key>hash2</key>
 			<data>
-			MAIwYNbxl85tyLkKFCLT1VqnvNuB90JJJo1+lRb4EnY=
+			MNCa6B6SmjPlE3rRjS1oA/bTORt1RsRQ4AkvHXrbSQM=
 			</data>
 		</dict>
 		<key>Modules/BidstackMobileAdsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eHoFmHk8htchj1FX5XMWnOIw4Bo=
+			d+zsXI0rc8gYSwmwmnIYZ8EO7y8=
 			</data>
 			<key>hash2</key>
 			<data>
-			JeiKBouNZKYKRGMpqMVir2o8cLk7bZXzFS6MFb0MJMY=
+			uTuSPx6UEy/3wQZ+QqwOB0OxcRMBtJtBmeeZHQeCmTA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

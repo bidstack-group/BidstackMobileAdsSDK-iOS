@@ -2393,13 +2393,6 @@
       },
       {
         "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "BidstackMobileAdsSDK"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -3364,7 +3357,7 @@
       "kind": "StringLiteral",
       "offset": 187,
       "length": 7,
-      "value": "\"2.3.1\""
+      "value": "\"2.3.2\""
     },
     {
       "filePath": "\/Users\/stanislavspetkevics\/Desktop\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/BidstackMobileAds.swift",
@@ -5084,7 +5077,7 @@
     {
       "filePath": "\/Users\/stanislavspetkevics\/Desktop\/bidstack-mobile-ads-sdk-ios\/BidstackAdsSDK\/Classes\/Vast\/VastTracker\/VastMacroReplacer.swift",
       "kind": "Dictionary",
-      "offset": 271,
+      "offset": 251,
       "length": 3,
       "value": "[]"
     },

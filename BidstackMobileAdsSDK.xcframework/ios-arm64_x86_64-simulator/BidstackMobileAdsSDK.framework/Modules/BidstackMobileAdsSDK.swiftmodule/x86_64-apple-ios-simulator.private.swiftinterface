@@ -5,7 +5,6 @@ import AVFAudio
 import AVFoundation
 import AdSupport
 import CommonCrypto
-import CoreLocation
 import CoreTelephony
 import Foundation
 import SafariServices
